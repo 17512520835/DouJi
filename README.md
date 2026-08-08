@@ -36,7 +36,7 @@
 
 > 不用安装任何东西，浏览器点开即玩。
 
-- **GitHub Pages 主入口（推荐）：** [本仓库 Pages 部署链接](https://17512520835.github.io/Digital-Boardgame-Project/)
+- **GitHub Pages 主入口（推荐）：** [本仓库 Pages 部署链接](https://17512520835.github.io/DouJi/)
   - 7.7 MB 单文件可玩版，整包内联，含九角色 + 地图 + 战斗系统
 - **本地版（含联机）：** 下载本仓库 → 解压 → `cd src` → 双击 `启动联机服务器.bat` → 浏览器开 `http://localhost:8787`
 
@@ -88,7 +88,7 @@ V7.2.10 ─ Online Phase 1（联机）+ 囚徒回血修正 + 战斗通报 ──
 ## 🧱 仓库结构
 
 ```
-Digital-Boardgame-Project/
+DouJi/
 ├── index.html                  ← GitHub Pages 入口（7.7MB 单文件可玩版）
 ├── README.md                   ← 你正在读的这份
 ├── LICENSE
@@ -156,8 +156,8 @@ Digital-Boardgame-Project/
 ### 本地联机（需要 Node.js 18+）
 
 ```bash
-git clone https://github.com/17512520835/Digital-Boardgame-Project.git
-cd Digital-Boardgame-Project/src
+git clone https://github.com/17512520835/DouJi.git
+cd DouJi/src
 # Windows: 双击 启动联机服务器.bat
 # macOS / Linux: ./启动联机服务器.sh
 ```
