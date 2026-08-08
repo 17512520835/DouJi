@@ -1,0 +1,31 @@
+{
+  "common": {
+    "hit_spark": "07_战斗特效/common/hit_spark.png",
+    "slash_gold_1": "07_战斗特效/common/slash_gold_1.png",
+    "slash_gold_2": "07_战斗特效/common/slash_gold_2.png",
+    "slash_blue": "07_战斗特效/common/slash_blue.png",
+    "slash_purple": "07_战斗特效/common/slash_purple.png",
+    "shield_pop": "07_战斗特效/common/shield_pop.png",
+    "heal_glow": "07_战斗特效/common/heal_glow.png",
+    "buff_aura": "07_战斗特效/common/buff_aura.png",
+    "burn_burst": "07_战斗特效/common/burn_burst.png",
+    "freeze_burst": "07_战斗特效/common/freeze_burst.png",
+    "poison_cloud": "07_战斗特效/common/poison_cloud.png",
+    "knockback_impact": "07_战斗特效/common/knockback_impact.png",
+    "target_marker": "07_战斗特效/common/target_marker.png",
+    "warning_marker": "07_战斗特效/common/warning_marker.png",
+    "resource_capture": "07_战斗特效/common/resource_capture.png",
+    "supply_activate": "07_战斗特效/common/supply_activate.png"
+  },
+  "ultimates": {
+    "luoji": "07_战斗特效/ultimates/luoji.png",
+    "chiyu": "07_战斗特效/ultimates/chiyu.png",
+    "lafeng": "07_战斗特效/ultimates/lafeng.png",
+    "qiu013": "07_战斗特效/ultimates/qiu013.png",
+    "baiye": "07_战斗特效/ultimates/baiye.png",
+    "lanyu": "07_战斗特效/ultimates/lanyu.png",
+    "youying": "07_战斗特效/ultimates/youying.png",
+    "xuanyi": "07_战斗特效/ultimates/xuanyi.png",
+    "fayoum": "07_战斗特效/ultimates/fayoum.png"
+  }
+}

@@ -1,0 +1,6 @@
+:root{--dj-bg:#07101b;--dj-panel:#0d1c2b;--dj-brass:#bc8f48;--dj-blue:#3898d6;--dj-red:#d24836;--dj-text:#e8edf1}
+.dj-panel{background:#0d1c2bf2;border:18px solid transparent;border-image:url('../9slice/panel_default.png') 32 fill stretch;color:var(--dj-text)}
+.dj-btn{min-width:140px;min-height:42px;padding:8px 22px;border:18px solid transparent;border-image-slice:24 fill;border-image-repeat:stretch;background:transparent;color:var(--dj-text);font:600 16px/1.2 "Noto Sans CJK SC","Microsoft YaHei",sans-serif;cursor:pointer}
+.dj-btn.primary{border-image-source:url('../9slice/primary_default.png')}.dj-btn.primary:hover{border-image-source:url('../9slice/primary_hover.png')}.dj-btn.primary:active{border-image-source:url('../9slice/primary_pressed.png')}.dj-btn.primary:disabled{border-image-source:url('../9slice/primary_disabled.png');color:#6f7881}
+.dj-btn.secondary{border-image-source:url('../9slice/secondary_default.png')}.dj-btn.secondary:hover{border-image-source:url('../9slice/secondary_hover.png')}
+.dj-btn.danger{border-image-source:url('../9slice/danger_default.png')}.dj-btn.action{border-image-source:url('../9slice/action_default.png')}

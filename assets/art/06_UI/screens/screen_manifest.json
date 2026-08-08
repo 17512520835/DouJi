@@ -1,0 +1,19 @@
+{
+  "loading": "06_UI/screens/loading.jpg",
+  "main_menu": "06_UI/screens/main_menu.jpg",
+  "hero_select": "06_UI/screens/hero_select.jpg",
+  "hero_detail": "06_UI/screens/hero_detail.jpg",
+  "match_loading": "06_UI/screens/match_loading.jpg",
+  "battle": "06_UI/screens/battle.jpg",
+  "discard": "06_UI/screens/discard.jpg",
+  "move_target": "06_UI/screens/move_target.jpg",
+  "response": "06_UI/screens/response.jpg",
+  "supply_choice": "06_UI/screens/supply_choice.jpg",
+  "replay_log": "06_UI/screens/replay_log.jpg",
+  "help_rules": "06_UI/screens/help_rules.jpg",
+  "settings": "06_UI/screens/settings.jpg",
+  "victory": "06_UI/screens/victory.jpg",
+  "defeat": "06_UI/screens/defeat.jpg",
+  "draw": "06_UI/screens/draw.jpg",
+  "error_recovery": "06_UI/screens/error_recovery.jpg"
+}
