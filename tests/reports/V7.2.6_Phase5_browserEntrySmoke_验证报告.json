@@ -1,0 +1,46 @@
+{
+  "version": "V7.2.6",
+  "phase": "Phase5 Browser Entry Static Smoke",
+  "passed": true,
+  "total": 7,
+  "failed": 0,
+  "results": [
+    {
+      "name": "official entry exists",
+      "ok": true,
+      "detail": "斗鸡_缩域争鸣_V7.2_Map_Phase2_Hotfix候选.html"
+    },
+    {
+      "name": "entry loads V7.2.1 core",
+      "ok": true,
+      "detail": "./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js"
+    },
+    {
+      "name": "entry loads V7.2.1 frontend adapter",
+      "ok": true,
+      "detail": "./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js"
+    },
+    {
+      "name": "dependency exists: ./engine.v721.core.bundle.js",
+      "ok": true,
+      "detail": "./engine.v721.core.bundle.js"
+    },
+    {
+      "name": "dependency exists: ./frontend.engine-adapter.v721.js",
+      "ok": true,
+      "detail": "./frontend.engine-adapter.v721.js"
+    },
+    {
+      "name": "entry has browser boot watchdog",
+      "ok": true,
+      "detail": "v651-boot-watch"
+    },
+    {
+      "name": "entry has no debug core script reference",
+      "ok": true,
+      "detail": "./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js"
+    }
+  ],
+  "runtimeBrowserStatus": "BLOCKED_IN_VALIDATION_ENV",
+  "runtimeBrowserNote": "Validation environment Chromium policy blocks both file:// and localhost navigation. This is an environment restriction, not converted into PASS."
+}

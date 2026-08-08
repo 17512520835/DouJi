@@ -1,0 +1,93 @@
+{
+  "candidate": "V7.2.10 High AI Phase1 hidden-information + regression-gate fix",
+  "focusedVerificationPassed": true,
+  "focusedVerificationCount": 12,
+  "legacyMissingBundleRefsInJS": 0,
+  "verification": [
+    {
+      "file": "v7.2.10_high_ai_phase1_regression.js",
+      "ok": true,
+      "seconds": 0.477,
+      "stdout_tail": "PASS choose is read-only and legal end\nPASS 20 decisions are dispatchable and bounded 389.9ms\nPASS no background/GPU/global-hook API isolated\n{\"pass\":3,\"fail\":0}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2.10_high_ai_hidden_information_regression.js",
+      "ok": true,
+      "seconds": 6.252,
+      "stdout_tail": "{\n  \"stage\": \"V7.2.10 High AI Hidden Information Boundary\",\n  \"passed\": true,\n  \"structural\": [\n    {\n      \"file\": \"engine.v721.core.bundle.js\",\n      \"ok\": true\n    },\n    {\n      \"file\": \"engine.v721.core.debug.bundle.js\",\n      \"ok\": true\n    }\n  ],\n  \"behavioral\": {\n    \"decisions\": 240,\n    \"rejected\": 0\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2.10_high_ai_long_smoke.js",
+      "ok": true,
+      "seconds": 7.674,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"results\": [\n    {\n      \"seed\": 721000,\n      \"a\": \"luoji\",\n      \"b\": \"lafeng\",\n      \"actions\": 108,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 721977,\n      \"a\": \"chiyu\",\n      \"b\": \"lanyu\",\n      \"actions\": 45,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 722954,\n      \"a\": \"lafeng\",\n      \"b\": \"fayoum\",\n      \"actions\": 62,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 723931,\n      \"a\": \"qiu013\",\n      \"b\": \"lafeng\",\n      \"actions\": 82,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 724908,\n      \"a\": \"baiye\",\n      \"b\": \"lanyu\",\n      \"actions\": 165,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 725885,\n      \"a\": \"lanyu\",\n      \"b\": \"fayoum\",\n      \"actions\": 62,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2_map_phase2_regression.js",
+      "ok": true,
+      "seconds": 0.059,
+      "stdout_tail": "{\n  \"engine\": \"0.5.2-map-phase2-hotfix\",\n  \"passed\": 5,\n  \"total\": 5,\n  \"failed\": [],\n  \"results\": [\n    {\n      \"name\": \"MapState v2/坐标索引/邻接完整\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"资源/补给目标进入MapState\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"战术步合法路径完全由Map查询结果驱动\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"主动移动产生领域事件并同步occupant\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"地图查询为副本，外部修改不能污染Core\",\n      \"ok\": true\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2_map_phase2_public_api_fuzz.js",
+      "ok": true,
+      "seconds": 3.617,
+      "stdout_tail": "{\n  \"engine\": \"0.5.2-map-phase2-hotfix\",\n  \"games\": 8,\n  \"commands\": 640,\n  \"failures\": [],\n  \"ok\": true\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2_map_fayoum_regression.js",
+      "ok": true,
+      "seconds": 0.082,
+      "stdout_tail": "{\n  \"engine\": \"0.5.2-map-phase2-hotfix\",\n  \"passed\": 5,\n  \"total\": 5,\n  \"failed\": [],\n  \"results\": [\n    {\n      \"name\": \"版本与MapState公开查询\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"太阳算式建立3张牌顶PendingChoice\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"牌顶顺序可自定义提交且事务关闭\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"对手Observation不能读取私有牌序\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"MOVE产生距离领域事件\",\n      \"ok\": true\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.1_combat_regression.js",
+      "ok": true,
+      "seconds": 0.418,
+      "stdout_tail": ": 1\\n      }\\n    },\\n    {\\n      \\\"name\\\": \\\"第3击普通挣脱不会留下挂起响应\\\",\\n      \\\"ok\\\": true,\\n      \\\"detail\\\": {\\n        \\\"phase\\\": \\\"PRE_ATTACK\\\",\\n        \\\"qi\\\": 3,\\n        \\\"expansionCount\\\": 1\\n      }\\n    },\\n    {\\n      \\\"name\\\": \\\"第4击普通挣脱不会留下挂起响应\\\",\\n      \\\"ok\\\": true,\\n      \\\"detail\\\": {\\n        \\\"phase\\\": \\\"PRE_ATTACK\\\",\\n        \\\"qi\\\": 3,\\n        \\\"expansionCount\\\": 1\\n      }\\n    },\\n    {\\n      \\\"name\\\": \\\"第2击反击不会留下挂起响应\\\",\\n      \\\"ok\\\": true,\\n      \\\"detail\\\": {\\n        \\\"phase\\\": \\\"PRE_ATTACK\\\",\\n        \\\"initiative\\\": 0,\\n        \\\"chainResolved\\\": 1\\n      }\\n    },\\n    {\\n      \\\"name\\\": \\\"第3击反击不会留下挂起响应\\\",\\n      \\\"ok\\\": true,\\n      \\\"detail\\\": {\\n        \\\"phase\\\": \\\"PRE_ATTACK\\\",\\n        \\\"initiative\\\": 0,\\n        \\\"chainResolved\\\": 2\\n      }\\n    },\\n    {\\n      \\\"name\\\": \\\"第4击反击不会留下挂起响应\\\",\\n      \\\"ok\\\": true,\\n      \\\"detail\\\": {\\n        \\\"phase\\\": \\\"PRE_ATTACK\\\",\\n        \\\"initiative\\\": 0,\\n        \\\"chainResolved\\\": 3\\n      }\\n    },\\n    {\\n      \\\"name\\\": \\\"第2击放弃响应后继续正确结算\\\",\\n      \\\"ok\\\": true,\\n      \\\"detail\\\": {\\n        \\\"phase\\\": \\\"CHASE_WINDOW\\\",\\n        \\\"chain\\\": 2,\\n        \\\"lastStep\\\": 2\\n      }\\n    },\\n    {\\n      \\\"name\\\": \\\"第3击放弃响应后继续正确结算\\\",\\n      \\\"ok\\\": true,\\n      \\\"detail\\\": {\\n        \\\"phase\\\": \\\"CHASE_WINDOW\\\",\\n        \\\"chain\\\": 3,\\n        \\\"lastStep\\\": 3\\n      }\\n    },\\n    {\\n      \\\"name\\\": \\\"第4击放弃响应后继续正确结算\\\",\\n      \\\"ok\\\": true,\\n      \\\"detail\\\": {\\n        \\\"phase\\\": \\\"CHASE_WINDOW\\\",\\n        \\\"chain\\\": 4,\\n        \\\"lastStep\\\": 4\\n      }\\n    }\\n  ]\\n}\\n\",\n      \"stderr\": \"\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2_stage3_core_mechanics_regression.js",
+      "ok": true,
+      "seconds": 0.293,
+      "stdout_tail": "         \"ultimate\": \"frenzy_execute\",\n          \"damage\": 7,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"baiye\",\n          \"ultimate\": \"ice_finale\",\n          \"damage\": 6,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"lanyu\",\n          \"ultimate\": \"phoenix_shadow\",\n          \"damage\": 8,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"youying\",\n          \"ultimate\": \"chaos_throat\",\n          \"damage\": 7,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"xuanyi\",\n          \"ultimate\": \"life_needle\",\n          \"damage\": 6,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"fayoum\",\n          \"ultimate\": \"endgame\",\n          \"damage\": 5,\n          \"phase\": \"PRE_ATTACK\"\n        }\n      ]\n    },\n    {\n      \"name\": \"Buff：冠军怒吼实际生效\",\n      \"category\": \"Buff\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": {\n        \"luojiRoarBuff\": 1\n      }\n    },\n    {\n      \"name\": \"Debuff：尾羽震喝实际施加封技\",\n      \"category\": \"Debuff\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": {\n        \"control\": [\n          \"sealed\"\n        ]\n      }\n    },\n    {\n      \"name\": \"ResponseWindow / 多段追击 / 第2-4击反击\",\n      \"category\": \"ResponseWindow\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": {\n        \"passed\": 10,\n        \"total\": 10\n      }\n    },\n    {\n      \"name\": \"PendingChoice：创建 / 提交 / 私有信息\",\n      \"category\": \"PendingChoice\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": {\n        \"exitCode\": 0,\n        \"failed\": []\n      }\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v6.6_signature_playability.js",
+      "ok": true,
+      "seconds": 3.758,
+      "stdout_tail": "sed\": true,\n  \"checks\": [\n    {\n      \"name\": \"luoji：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"baiye\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"chiyu：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"lanyu\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"lafeng：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"youying\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"qiu013：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"xuanyi\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"baiye：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"fayoum\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"lanyu：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"luoji\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"youying：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"chiyu\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"xuanyi：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"lafeng\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"fayoum：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"qiu013\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2.7_phase6_observable_golden_master.js",
+      "ok": true,
+      "seconds": 1.36,
+      "stdout_tail": "{\n  \"scenarios\": 16,\n  \"totalCommands\": 163,\n  \"pass\": 12,\n  \"passWithApprovedExceptions\": 4,\n  \"unexplainedFailures\": 0\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2.6_browser_entry_static_smoke.js",
+      "ok": true,
+      "seconds": 0.091,
+      "stdout_tail": "PASS official entry exists 斗鸡_缩域争鸣_V7.2_Map_Phase2_Hotfix候选.html\nPASS entry loads V7.2.1 core ./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js\nPASS entry loads V7.2.1 frontend adapter ./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js\nPASS dependency exists: ./engine.v721.core.bundle.js ./engine.v721.core.bundle.js\nPASS dependency exists: ./frontend.engine-adapter.v721.js ./frontend.engine-adapter.v721.js\nPASS entry has browser boot watchdog v651-boot-watch\nPASS entry has no debug core script reference ./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "v7.2.6_phase5_long_ai_stability.js",
+      "ok": true,
+      "seconds": 16.271,
+      "stdout_tail": "1/4 \u001b[33m726500\u001b[39m luoji vs qiu013 \u001b[33m478\u001b[39m draw\n2/4 \u001b[33m734419\u001b[39m chiyu vs xuanyi \u001b[33m52\u001b[39m \u001b[33m0\u001b[39m\n3/4 \u001b[33m742338\u001b[39m lafeng vs lafeng \u001b[33m74\u001b[39m \u001b[33m0\u001b[39m\n4/4 \u001b[33m750257\u001b[39m qiu013 vs youying \u001b[33m85\u001b[39m \u001b[33m1\u001b[39m\n{\n  \"completed\": 4,\n  \"unfinished\": 0,\n  \"commandRejected\": 0,\n  \"eventDuplicates\": 0,\n  \"snapshotPollution\": 0,\n  \"replayDigestMismatch\": 0,\n  \"heapSamples\": 16,\n  \"heapMinBytes\": 7952424,\n  \"heapMaxBytes\": 26544416,\n  \"heapGrowthBytes\": 18591992,\n  \"postGcHeapBytes\": [],\n  \"postGcGrowthBytes\": 0,\n  \"postGcGrowthRatio\": null,\n  \"peakExpansionLedgerEvents\": 36,\n  \"peakLegalActionSet\": 19,\n  \"peakResponseTransactionDepth\": 0,\n  \"actionQueueModel\": \"synchronous dispatch; no persistent Action Queue object in Core\",\n  \"responseQueueModel\": \"ResponseWindow/PendingChoice are single active transactions; no persistent Response Queue object in Core\"\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "note": "The included run_all_regressions.js is the one-click current-gate runner. Final browser manual gate and 30-50 seed extended stress remain final-seal tasks."
+}

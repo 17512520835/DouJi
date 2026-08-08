@@ -1,0 +1,27 @@
+{
+  "stage": "V7.2.10 Online Phase 1 authoritative multiplayer",
+  "engineCoreVersion": "0.5.2-map-phase2-hotfix",
+  "architecture": "authoritative Node.js GameEngineCore + WebSocket + side Observation",
+  "newFiles": [
+    "online-server.js",
+    "online.html",
+    "ONLINE_请先阅读.md",
+    "启动联机服务器.bat",
+    "启动联机服务器.sh",
+    "online_protocol_regression.js",
+    "online_e2e_regression.js"
+  ],
+  "verification": {
+    "online_protocol_regression": "PASS",
+    "online_websocket_e2e": "PASS",
+    "hidden_payload_isolation": "PASS",
+    "forged_action_id_rejected": "PASS",
+    "accepted_action_advances_seq": "PASS",
+    "replay_digest": "PASS",
+    "existing_candidate_regressions": "17/17 PASS"
+  },
+  "scope": {
+    "included": ["room code", "invite link", "two-player authoritative match", "reconnect while server process survives", "seq stale-command gate", "surrender", "two-party rematch"],
+    "notIncluded": ["account system", "global matchmaking", "database persistence", "spectator", "chat", "tournament timer", "public-internet abuse protection"]
+  }
+}

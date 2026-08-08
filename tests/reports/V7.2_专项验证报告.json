@@ -1,0 +1,20 @@
+{
+  "package": "V7.2 Map Core / 法尤姆闭合候选",
+  "baseline": "V7.1.3 ResponseWindow / 地图稳定版",
+  "syntax_checks": {
+    "engine.v720.core.bundle.js": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "frontend.engine-adapter.v720.js": {
+      "returncode": 0,
+      "stderr": ""
+    }
+  },
+  "v7.2_regression": {
+    "returncode": 0,
+    "stdout": "{\n  \"engine\": \"0.5.0-map-phase1\",\n  \"passed\": 5,\n  \"total\": 5,\n  \"failed\": [],\n  \"results\": [\n    {\n      \"name\": \"版本与MapState公开查询\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"太阳算式建立3张牌顶PendingChoice\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"牌顶顺序可自定义提交且事务关闭\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"对手Observation不能读取私有牌序\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"MOVE产生距离领域事件\",\n      \"ok\": true\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  "note": "V7.1.3 historical regression assets are retained unchanged in the package; this report records the new V7.2-specific checks."
+}

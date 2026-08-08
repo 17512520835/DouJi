@@ -1,0 +1,185 @@
+{
+  "stage": "V7.2 Phase3 - Core Mechanics Closure",
+  "engine": "0.5.2-map-phase2-hotfix",
+  "gameplay": "7.2.0-map-core-candidate",
+  "status": "PASS",
+  "passed": true,
+  "coverage": {
+    "Skill": true,
+    "Ultimate": true,
+    "Buff": true,
+    "Debuff": true,
+    "ResponseWindow": true,
+    "多段追击": true,
+    "反击": true,
+    "PendingChoice": true
+  },
+  "results": [
+    {
+      "name": "九角色 Skill 实际释放",
+      "category": "Skill",
+      "status": "PASS",
+      "ok": true,
+      "detail": [
+        {
+          "hero": "luoji",
+          "skill": "champ_round",
+          "energyBefore": 9,
+          "energyAfter": 7
+        },
+        {
+          "hero": "chiyu",
+          "skill": "sun_dance",
+          "energyBefore": 9,
+          "energyAfter": 7
+        },
+        {
+          "hero": "lafeng",
+          "skill": "duel_oath",
+          "energyBefore": 9,
+          "energyAfter": 7
+        },
+        {
+          "hero": "qiu013",
+          "skill": "full_overload",
+          "energyBefore": 9,
+          "energyAfter": 7
+        },
+        {
+          "hero": "baiye",
+          "skill": "chick_guard",
+          "energyBefore": 9,
+          "energyAfter": 8
+        },
+        {
+          "hero": "lanyu",
+          "skill": "sky_hunt",
+          "energyBefore": 9,
+          "energyAfter": 9
+        },
+        {
+          "hero": "youying",
+          "skill": "flow_break",
+          "energyBefore": 9,
+          "energyAfter": 7
+        },
+        {
+          "hero": "xuanyi",
+          "skill": "herb_revive",
+          "energyBefore": 9,
+          "energyAfter": 7
+        },
+        {
+          "hero": "fayoum",
+          "skill": "fate_leap",
+          "energyBefore": 9,
+          "energyAfter": 7
+        }
+      ]
+    },
+    {
+      "name": "九角色 Ultimate 实际结算",
+      "category": "Ultimate",
+      "status": "PASS",
+      "ok": true,
+      "detail": [
+        {
+          "hero": "luoji",
+          "ultimate": "ten_sec_kill",
+          "damage": 6,
+          "phase": "PRE_ATTACK"
+        },
+        {
+          "hero": "chiyu",
+          "ultimate": "crown_skysurge",
+          "damage": 5,
+          "phase": "PRE_ATTACK"
+        },
+        {
+          "hero": "lafeng",
+          "ultimate": "lance_charge",
+          "damage": 5,
+          "phase": "CHASE_WINDOW"
+        },
+        {
+          "hero": "qiu013",
+          "ultimate": "frenzy_execute",
+          "damage": 7,
+          "phase": "PRE_ATTACK"
+        },
+        {
+          "hero": "baiye",
+          "ultimate": "ice_finale",
+          "damage": 6,
+          "phase": "PRE_ATTACK"
+        },
+        {
+          "hero": "lanyu",
+          "ultimate": "phoenix_shadow",
+          "damage": 8,
+          "phase": "PRE_ATTACK"
+        },
+        {
+          "hero": "youying",
+          "ultimate": "chaos_throat",
+          "damage": 7,
+          "phase": "PRE_ATTACK"
+        },
+        {
+          "hero": "xuanyi",
+          "ultimate": "life_needle",
+          "damage": 6,
+          "phase": "PRE_ATTACK"
+        },
+        {
+          "hero": "fayoum",
+          "ultimate": "endgame",
+          "damage": 5,
+          "phase": "PRE_ATTACK"
+        }
+      ]
+    },
+    {
+      "name": "Buff：冠军怒吼实际生效",
+      "category": "Buff",
+      "status": "PASS",
+      "ok": true,
+      "detail": {
+        "luojiRoarBuff": 1
+      }
+    },
+    {
+      "name": "Debuff：尾羽震喝实际施加封技",
+      "category": "Debuff",
+      "status": "PASS",
+      "ok": true,
+      "detail": {
+        "control": [
+          "sealed"
+        ]
+      }
+    },
+    {
+      "name": "ResponseWindow / 多段追击 / 第2-4击反击",
+      "category": "ResponseWindow",
+      "status": "PASS",
+      "ok": true,
+      "detail": {
+        "passed": 10,
+        "total": 10
+      }
+    },
+    {
+      "name": "PendingChoice：创建 / 提交 / 私有信息",
+      "category": "PendingChoice",
+      "status": "PASS",
+      "ok": true,
+      "detail": {
+        "exitCode": 1,
+        "legacyVersionFailure": [
+          "版本与MapState公开查询"
+        ]
+      }
+    }
+  ]
+}

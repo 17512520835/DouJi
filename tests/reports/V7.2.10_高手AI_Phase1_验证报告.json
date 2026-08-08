@@ -1,0 +1,43 @@
+{
+  "version": "V7.2.10",
+  "feature": "高手AI Phase1",
+  "resourceIsolation": {
+    "timers": false,
+    "workers": false,
+    "gpu": false,
+    "globalHooks": false,
+    "persistentCache": false,
+    "sharedDependencyChanges": false,
+    "maxNodes": 36,
+    "maxMillis": 6,
+    "disableWhenHidden": true,
+    "lowConcurrencyFallback": 3
+  },
+  "note": "旧 v7.2.6 phase-stuck 门禁在原始 V7.2.9 包同样触发；本版新增 digest-progress 长局门禁。",
+  "tests": [
+    {
+      "test": "v7.2.10_high_ai_phase1_regression.js",
+      "returncode": 0,
+      "stdout": "PASS choose is read-only and legal end\nPASS 20 decisions are dispatchable and bounded 250.1ms\nPASS no background/GPU/global-hook API isolated\n{\"pass\":3,\"fail\":0}\n",
+      "stderr": ""
+    },
+    {
+      "test": "v7.2.10_high_ai_long_smoke.js",
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"results\": [\n    {\n      \"seed\": 721000,\n      \"a\": \"luoji\",\n      \"b\": \"lafeng\",\n      \"actions\": 108,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 721977,\n      \"a\": \"chiyu\",\n      \"b\": \"lanyu\",\n      \"actions\": 45,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 722954,\n      \"a\": \"lafeng\",\n      \"b\": \"fayoum\",\n      \"actions\": 61,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 723931,\n      \"a\": \"qiu013\",\n      \"b\": \"lafeng\",\n      \"actions\": 82,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 724908,\n      \"a\": \"baiye\",\n      \"b\": \"lanyu\",\n      \"actions\": 165,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 725885,\n      \"a\": \"lanyu\",\n      \"b\": \"fayoum\",\n      \"actions\": 62,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "test": "v7.2.9_dead_hand_regression.js",
+      "returncode": 0,
+      "stdout": "{\n  \"suite\": \"V7.2.9 dead-hand anti-brick regression\",\n  \"passed\": 2,\n  \"total\": 2,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"name\": \"白夜：追击+反击死手会触发整备换手\",\n      \"ok\": true,\n      \"detail\": {\n        \"before\": [\n          \"终成白夜\",\n          \"缩颈防身\",\n          \"幼生惊逃\",\n          \"破壳跃升\",\n          \"湖畔追啄\"\n        ],\n        \"after\": [\n          \"水面借力\",\n          \"湖畔追啄\",\n          \"稚羽上挑\",\n          \"斜翼掠水\",\n          \"翻羽落地\"\n        ],\n        \"redrawCount\": 5\n      }\n    },\n    {\n      \"name\": \"有移动/增益等主动牌时不会被误判为死手\",\n      \"ok\": true,\n      \"detail\": {\n        \"hand\": [\n          \"笨拙扑腾\",\n          \"缩颈防身\",\n          \"幼生惊逃\",\n          \"破壳跃升\",\n          \"湖畔追啄\"\n        ]\n      }\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "test": "v7.2.7_phase6_observable_golden_master.js",
+      "returncode": 0,
+      "stdout": "{\n  \"scenarios\": 16,\n  \"totalCommands\": 163,\n  \"pass\": 12,\n  \"passWithApprovedExceptions\": 4,\n  \"unexplainedFailures\": 0\n}\n",
+      "stderr": ""
+    }
+  ]
+}

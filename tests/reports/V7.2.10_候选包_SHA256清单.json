@@ -1,0 +1,402 @@
+[
+  {
+    "path": "README_V7.2.7_Phase6_请先阅读.md",
+    "bytes": 410,
+    "sha256": "1030bb962ba5178b95aa643f31819bf026acf0c5188b1e14d72cdee8a083348e"
+  },
+  {
+    "path": "README_请先阅读.md",
+    "bytes": 7355,
+    "sha256": "bc633f30426c21141210c8a729184bbef166780ad70ae03b302d15e326c00963"
+  },
+  {
+    "path": "V7.1.1_EngineCore_Phase4_架构契约.md",
+    "bytes": 3334,
+    "sha256": "1e3ad1a09157c65600cefe86a8f9c1b519132d834d5f71b257427d1e802d93fc"
+  },
+  {
+    "path": "V7.1.1_EngineCore_Phase4_验证摘要.json",
+    "bytes": 3633,
+    "sha256": "b76b15ca6ed7e11143daf72e765f8e587fac4c46e22a6828bb9d28981c6a700d"
+  },
+  {
+    "path": "V7.1.3_ResponseWindow_地图稳定性修复说明.md",
+    "bytes": 2650,
+    "sha256": "940cd22d15142490c76bccd4fbec438eebf716b785a42b9b723336a94315f8c9"
+  },
+  {
+    "path": "V7.1_Combat_修改策划与实现说明.md",
+    "bytes": 3286,
+    "sha256": "5fe1afc0b1328af18c8f17300c7dcc14a8827b7a8c1e4bc8d10287a0dc2a7905"
+  },
+  {
+    "path": "V7.2.10_候选交付_隐藏信息与回归门禁修复说明.md",
+    "bytes": 2165,
+    "sha256": "7ed1342ff14152bc8da6caee4004816d5bf585a75752a3850d44a74080221996"
+  },
+  {
+    "path": "V7.2.10_候选包_构建验证结果.json",
+    "bytes": 13249,
+    "sha256": "52732ac7aec982963fae186668221a53ed8ca1e5a31f21879358cc5febd1b8da"
+  },
+  {
+    "path": "V7.2.10_高手AI_Phase1_隔离与性能修正说明.md",
+    "bytes": 2075,
+    "sha256": "db21577328f355dc5444d305e8d682bd6eefa9f02dc08d70835c42a4f22a2be7"
+  },
+  {
+    "path": "V7.2.10_高手AI_Phase1_验证报告.json",
+    "bytes": 3459,
+    "sha256": "b2430619099542c3550d5c3e7c4a0e162fde262332d7085746f90db263ec3323"
+  },
+  {
+    "path": "V7.2.1_MapVisualBarrier_障碍高差可视化说明.md",
+    "bytes": 945,
+    "sha256": "9860708b2def16f85e06b25504a85e1d3cdca519e790191b723421d7e4e7f685"
+  },
+  {
+    "path": "V7.2.2_MovementDirection_修复说明.md",
+    "bytes": 1700,
+    "sha256": "3c4108daf5a9d015ef7e46913e4b9957349b32e305472c81408c35dd13824623"
+  },
+  {
+    "path": "V7.2.2_MovementDirection_验证报告.json",
+    "bytes": 1244,
+    "sha256": "ebe6b92087500dd9f880bf797eebb631d4b941bff9de2c8f910fc0914b839570"
+  },
+  {
+    "path": "V7.2.3_HandOverflow_手牌过多可用性修复说明.md",
+    "bytes": 1481,
+    "sha256": "92964b381118228369f39d6341e0932d52c3c07332d3624a370b1b50bf8ea8e0"
+  },
+  {
+    "path": "V7.2.3_HandOverflow_验证摘要.json",
+    "bytes": 348,
+    "sha256": "99f11c0b0c92c4283f8a558147a07525572f7e69a2a19e0ce40e9f27d8b1ffe0"
+  },
+  {
+    "path": "V7.2.4_对局问题诊断与被动摸牌软上限修复说明.md",
+    "bytes": 1304,
+    "sha256": "da82493f62f71d6fc00501948079748a446273b2dd16df2496453a55d24e6b27"
+  },
+  {
+    "path": "V7.2.4_本次生成回归结果.json",
+    "bytes": 6700,
+    "sha256": "6ab6d35a6f88e931cede5711b93a2110c0a2956002d7274d2a226d5a5a0e5f77"
+  },
+  {
+    "path": "V7.2.4_验证摘要.json",
+    "bytes": 476,
+    "sha256": "174e32c28cb2926d1267ae29d952fccc1c66fa6cf214a599019b758206b55ca1"
+  },
+  {
+    "path": "V7.2.5_Phase4_缩域专项_改动说明.md",
+    "bytes": 1294,
+    "sha256": "fb919d3b6604c5c242ad2e4016f7e04ccd607e6d6f55d6648c0f58edccb16c63"
+  },
+  {
+    "path": "V7.2.5_Phase4_缩域专项_验证报告.json",
+    "bytes": 1871,
+    "sha256": "c463f913805b70402fef112ce0c4b8d72e0d0be9b8f40472ef21af7713ef1f6f"
+  },
+  {
+    "path": "V7.2.6_Phase5_browserEntrySmoke_验证报告.json",
+    "bytes": 1410,
+    "sha256": "5c96dd836b02d2a38baaf1854dc40d8c372bb5376695fd95e3ca3d16db88cc2c"
+  },
+  {
+    "path": "V7.2.6_Phase5_长局稳定性_验证报告.json",
+    "bytes": 2595,
+    "sha256": "9f69dbe472a030148ebf3ff06fb93810cc61b0cc747f24e9c5e442fa3d790deb"
+  },
+  {
+    "path": "V7.2.6_Phase5_验证说明.md",
+    "bytes": 2229,
+    "sha256": "6b879e2605cc08c0fef5956bfe4b44b321b275c67b6c567d380e2217e8bf91b2"
+  },
+  {
+    "path": "V7.2.7_BrowserRuntimeSmoke_最终人工门禁.md",
+    "bytes": 1215,
+    "sha256": "b356120404ff0847c3701f03688778775ff51c23ff16bd873b865d3d558d5697"
+  },
+  {
+    "path": "V7.2.7_Phase6_ObservableGoldenMaster_验证报告.json",
+    "bytes": 6025,
+    "sha256": "9aa500eadabc8086f491a5dff7e1bc3a9c9041825d84d82c14fec02008974965"
+  },
+  {
+    "path": "V7.2.7_Phase6_最终封箱判定报告.json",
+    "bytes": 11575,
+    "sha256": "882e841bf051e74bef450667ffb19d81daa7de69c7823ad33ab6246d6d50ad23"
+  },
+  {
+    "path": "V7.2.7_Phase6_最终封箱说明.md",
+    "bytes": 2534,
+    "sha256": "59dafc8f6b867c31097ab5db2b384f9cad96f31ef916e3a181173253a16d854b"
+  },
+  {
+    "path": "V7.2.7_岚羽完整棋子修复说明.md",
+    "bytes": 835,
+    "sha256": "f7b119973c098694aad549b6f09ec4255c1ab6d15542410148405e4709338570"
+  },
+  {
+    "path": "V7.2.8_纯美术优化说明.md",
+    "bytes": 2423,
+    "sha256": "304b7436b69ec7eeef3a7b247c205187b1b223aa77975c20e1f547d89370c61b"
+  },
+  {
+    "path": "V7.2.9_死手与可用牌修复说明.md",
+    "bytes": 1978,
+    "sha256": "f2502ee30d15a8c728d4737aabfc560e57732ae2b036a54258b1ad6fc0cab2d9"
+  },
+  {
+    "path": "V7.2_Map_Core_法尤姆闭合说明.md",
+    "bytes": 1617,
+    "sha256": "f74419fd727022c578ab972787b619688542017974a24484edda34086dd088e1"
+  },
+  {
+    "path": "V7.2_Map_Phase2_Hotfix_修复说明.md",
+    "bytes": 1257,
+    "sha256": "153ae9ecdffc1deded73165c736e9aad58cf1f6ad3ef554b6c4fec88a31f147e"
+  },
+  {
+    "path": "V7.2_Map_Phase2_Hotfix_验证报告.json",
+    "bytes": 2059,
+    "sha256": "88aa3af1bf657ccff5aab7ac140932042ec95058d2013f123ddf9e0831ea7228"
+  },
+  {
+    "path": "V7.2_Map_Phase2_封箱验证报告.json",
+    "bytes": 9408,
+    "sha256": "c8047876253aff23d08f592c014a11f7a8edcb4dfefa82eb1659f798e515494a"
+  },
+  {
+    "path": "V7.2_Map_Phase2_迁移与GoldenMaster封箱说明.md",
+    "bytes": 1399,
+    "sha256": "d388b594d459d74a9e1c32058c716c7e36af0fc628312cc8dd3f2328d4089225"
+  },
+  {
+    "path": "V7.2_MovementResolver_统一移动修复说明.md",
+    "bytes": 3661,
+    "sha256": "1a6300c31347274094cd3351b7d109ddc56ee64bb3dae28f721c50f443320b83"
+  },
+  {
+    "path": "V7.2_MovementResolver_验证报告.json",
+    "bytes": 1428,
+    "sha256": "f4ac356acb4df7bd343c7ed08836e8948839d0c6f0234dd030179ad1761dc434"
+  },
+  {
+    "path": "V7.2_Phase3_九角色完整行为回归_验证报告.json",
+    "bytes": 27483,
+    "sha256": "5725b62785634bf91d8d90bf16bbf13f7cfbe88eb09b33f8975cf38fa91902bf"
+  },
+  {
+    "path": "V7.2_Phase3_九角色签名回归_验证报告.json",
+    "bytes": 18466,
+    "sha256": "d31fbe409ff0bea32f029d88e13ca60cf2aecaf700a9edb481f9ed4df22d6b88"
+  },
+  {
+    "path": "V7.2_Phase3_九角色签名回归_验证说明.md",
+    "bytes": 2497,
+    "sha256": "f3418b3214dc2e4722fefffb1d2e74c643269d533e803c70358ef90355a8748f"
+  },
+  {
+    "path": "V7.2_Phase3_八类核心机制闭合_验证报告.json",
+    "bytes": 4131,
+    "sha256": "74ac83fb02608ea954bc40057e7f507155fef500586dd1e9b27da13b7d529dc7"
+  },
+  {
+    "path": "V7.2_Phase3_完整行为回归_改动说明.md",
+    "bytes": 1835,
+    "sha256": "44b50ec7c8105d3f9f926b02bb0c63776afabf68fde50dd0d9890d2233ad2558"
+  },
+  {
+    "path": "V7.2_专项验证报告.json",
+    "bytes": 1128,
+    "sha256": "cb8c1b3983f25fad4c3a5d701865be6e0618ca5fb330f79b72abf0ee298da4af"
+  },
+  {
+    "path": "engine.v714.core.bundle.js",
+    "bytes": 365819,
+    "sha256": "590d7e6d56846be0f6e8f5b72761ea9e326aa5bcc93b3688e92def7df7ad323f"
+  },
+  {
+    "path": "engine.v714.core.debug.bundle.js",
+    "bytes": 369106,
+    "sha256": "7ae88550fb2a90d2a12121bf05413aef3b4759e29fd2846b1f576b9e2533e881"
+  },
+  {
+    "path": "engine.v721.core.bundle.js",
+    "bytes": 386739,
+    "sha256": "6c4b3de44aecfbc991b7ac9b01ef337b2f3f37b37e7d31e7fb32b812b31a5345"
+  },
+  {
+    "path": "engine.v721.core.debug.bundle.js",
+    "bytes": 390026,
+    "sha256": "30d9ddbc0690e6d239faf558e78884ba071caba4ceb2eabc1a8e45a47b1b3b30"
+  },
+  {
+    "path": "frontend.engine-adapter.v714.js",
+    "bytes": 3417,
+    "sha256": "1e4cf5f42e48f8e1de579e131bf1e153ed050820eddd0be21c2ea769d5b13375"
+  },
+  {
+    "path": "frontend.engine-adapter.v721.js",
+    "bytes": 3801,
+    "sha256": "22784acbfa97252fea144d995d7780f7249252676aab77ebb2322c4a5c94496c"
+  },
+  {
+    "path": "run_all_regressions.js",
+    "bytes": 1719,
+    "sha256": "970df115250e596a9691c45ccd0afe42fb506b4714d17fd4011ab6ff06c7d3fe"
+  },
+  {
+    "path": "v6.6_signature_playability.js",
+    "bytes": 1436,
+    "sha256": "0bc24a12a36ae97cc51a91318411a76988cc16ad4f5c4ad4a2abbd60c8dcc0be"
+  },
+  {
+    "path": "v7.0.2_设计审计与调整报告.md",
+    "bytes": 1287,
+    "sha256": "37ea7b96986e04b47ba27ce2f6d15066874e045f9c3b832e06a1ac1df74378d9"
+  },
+  {
+    "path": "v7.1.1_engine_core_phase4_regression.js",
+    "bytes": 3682,
+    "sha256": "5c32e1d1b2270be83dd3080cfd48675fa25b2bb7793188ba480005f32f76d035"
+  },
+  {
+    "path": "v7.1.3_response_window_multihit_regression.js",
+    "bytes": 4040,
+    "sha256": "0f2710503fe7facbcd5d7f444e97ad068e5f7825f87ec717497a509ba460dac0"
+  },
+  {
+    "path": "v7.1_combat_regression.js",
+    "bytes": 715,
+    "sha256": "100a0c8e28eb5714ca0af6c814a10611c4ab024ddbcd9a42695d6ffcba4b7a9d"
+  },
+  {
+    "path": "v7.2.10_high_ai_hidden_information_regression.js",
+    "bytes": 2469,
+    "sha256": "a06abfac4151f18793f73b1de976df2ccff43797875cdaff154db609d94f1bed"
+  },
+  {
+    "path": "v7.2.10_high_ai_long_smoke.js",
+    "bytes": 1331,
+    "sha256": "c4b2300d4eb63975ee5fef3fcf25c46fb82a8bbfe5345bc8c42e2ec3b3695fe5"
+  },
+  {
+    "path": "v7.2.10_high_ai_phase1_regression.js",
+    "bytes": 1836,
+    "sha256": "a83c0fd21f932aa103739ca1d897d450799b9d765a8f2fff5ec9d5052c7defb3"
+  },
+  {
+    "path": "v7.2.2_movement_direction_regression.js",
+    "bytes": 3768,
+    "sha256": "f7f25ffeded9072916aed18f3df68cb95f6073a5077af655c6558ea6ec7bc3f4"
+  },
+  {
+    "path": "v7.2.3_hand_overflow_ui_regression.js",
+    "bytes": 1090,
+    "sha256": "aa559da085010eaad5bd631d0baa03ca26703007b547a55b0b4cec0ee9e698a2"
+  },
+  {
+    "path": "v7.2.4_passive_draw_softcap_regression.js",
+    "bytes": 2690,
+    "sha256": "8c30e1f51f6fca990d39542d02bd7ef407e16b6b74db50d00cc384807aa32559"
+  },
+  {
+    "path": "v7.2.5_phase4_shrink_special_regression.js",
+    "bytes": 5815,
+    "sha256": "e91eefe05e085f6d32b573a77670604e7c12c06f97721087aa5e63d0f4a9091d"
+  },
+  {
+    "path": "v7.2.6_browser_entry_static_smoke.js",
+    "bytes": 1562,
+    "sha256": "ebcc6f5c70501552e499f753ac8706d62eb183df0ad29fb3ce8bd095db881e17"
+  },
+  {
+    "path": "v7.2.6_phase5_long_ai_stability.js",
+    "bytes": 4711,
+    "sha256": "cc5871f7d65ae0a78506e8c5e0ffb82536f0808ff103296cccd8f26e480712c6"
+  },
+  {
+    "path": "v7.2.7_browser_runtime_smoke_server.py",
+    "bytes": 881,
+    "sha256": "c8557dd3daaa3378a75ab1e63f2920f103fe75ca5501942b148f7db1faed974c"
+  },
+  {
+    "path": "v7.2.7_phase6_observable_golden_master.js",
+    "bytes": 7293,
+    "sha256": "f362ed67e1894352ee264f79b9c5ebce5f4013d5d1576aaf62f28b3262808ba1"
+  },
+  {
+    "path": "v7.2.9_dead_hand_regression.js",
+    "bytes": 1922,
+    "sha256": "d5f44a878fd3f102e06c4cbb94d51ce2fb8ffd3f266a2a9c27a7255e822fcbb5"
+  },
+  {
+    "path": "v7.2_map_fayoum_regression.js",
+    "bytes": 2891,
+    "sha256": "96f5e05d84c4bd5442a59075400927cdc07d107dcef9ce998026d917f5f0a5b1"
+  },
+  {
+    "path": "v7.2_map_phase2_hotfix_regression.js",
+    "bytes": 8616,
+    "sha256": "d6564b892bd69182e90093caadc01fd236e440bcb43c32a8c1cdb127c39e912b"
+  },
+  {
+    "path": "v7.2_map_phase2_public_api_fuzz.js",
+    "bytes": 1419,
+    "sha256": "68fa7e3c9f163fb00ef3aa6d1a31941131e1444d6f349a6d634e0e1a5f0e4cc1"
+  },
+  {
+    "path": "v7.2_map_phase2_regression.js",
+    "bytes": 2500,
+    "sha256": "b70fdb077c5c4ad2004b6bb97cff84a88e75f362c4f809646fb556fa7c2a5922"
+  },
+  {
+    "path": "v7.2_movement_resolver_regression.js",
+    "bytes": 6933,
+    "sha256": "8e638098066da93fa27d1a69b11db398039d2d32777d3d3938ac7a12dee57415"
+  },
+  {
+    "path": "v7.2_stage3_core_mechanics_regression.js",
+    "bytes": 6521,
+    "sha256": "39386dca2e10395fb7a6b3b294b9e45137acdadfd121acacf8e7c32b481119a9"
+  },
+  {
+    "path": "v7.2_stage3_nine_role_signature_regression.js",
+    "bytes": 2813,
+    "sha256": "6d8d26ca60544638b2e638a8d5f5be9712c3cbea2a8742686aab7658b1b9ea23"
+  },
+  {
+    "path": "斗鸡_缩域争鸣_V7.2_Map_Phase2_Hotfix候选.html",
+    "bytes": 7770657,
+    "sha256": "458e6d6e4cb6fa08ac505b4aedc338a45f9ab670b421694d249c5bc6a657fe82"
+  },
+  {
+    "path": "精简记录.txt",
+    "bytes": 73,
+    "sha256": "67beed14572d0ffd09991d2562fca023523f24c27d99e36b44cebcba2ae6358a"
+  },
+  {
+    "path": "美术优化资源/岚羽_portrait.webp",
+    "bytes": 18052,
+    "sha256": "080c5fe95dd5d2e7e0ff422a15aa6b30cf2c8a3867a5f3379385e95fa6f5b328"
+  },
+  {
+    "path": "美术优化资源/岚羽_selection.webp",
+    "bytes": 45082,
+    "sha256": "df9f010bc6a8d9f3457a082ded0985ef1b929be4a69c339b92b85446941cbe6e"
+  },
+  {
+    "path": "美术优化资源/岚羽_sidebar.webp",
+    "bytes": 25218,
+    "sha256": "50b1c6a2b6ca42ac541324b81ac923ef41f3ed34337e86a4cdc21bb7091a09b7"
+  },
+  {
+    "path": "美术优化资源/岚羽_token.webp",
+    "bytes": 21584,
+    "sha256": "1706cca38dc95e5b9e73e25639bb637ca7efac7d3e600e98f2421cd37c366962"
+  }
+]

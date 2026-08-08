@@ -1,0 +1,9 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),path=require('path'),{performance}=require('perf_hooks');
+global.window=global;vm.runInThisContext(fs.readFileSync(path.join(__dirname,'engine.v721.core.debug.bundle.js'),'utf8'));
+const G=global.GameEngine;let pass=0,fail=0;function A(x,m){if(!x)throw Error(m||'assert')}
+function T(n,f){try{console.log('PASS',n,f()||'');pass++}catch(e){console.error('FAIL',n,e.stack||e);fail++}}
+T('choose is read-only and legal',()=>{const c=G.createGame({heroA:'luoji',heroB:'lafeng',firstPlayer:'B',seed:7210,map:'terraced_arena_9x9'}),ai=G.createAI('tactical','lafeng','B',7210),b=c.getStateDigest(),L=c.getLegalActions('B'),a=ai.choose(c);A(a&&L.some(x=>x.actionId===a.actionId));A(c.getStateDigest()===b,'choose mutated state');return a.kind});
+T('20 decisions are dispatchable and bounded',()=>{const c=G.createGame({heroA:'luoji',heroB:'lafeng',firstPlayer:'A',seed:7211,map:'terraced_arena_9x9'}),ais={A:G.createAI('tactical','luoji','A',7211),B:G.createAI('tactical','lafeng','B',7211)},t=performance.now();for(let i=0;i<20;i++){if(c.getObservationForSide('A').winner!=null)break;const side=c.getLegalActions('A').length?'A':'B',L=c.getLegalActions(side),a=ais[side].choose(c);A(a&&L.some(x=>x.actionId===a.actionId));A(c.dispatch(a).ok,'rejected')}const ms=performance.now()-t;A(ms<1500,ms+'ms');return ms.toFixed(1)+'ms'});
+T('no background/GPU/global-hook API',()=>{const s=fs.readFileSync(path.join(__dirname,'engine.v721.core.bundle.js'),'utf8'),p=s.slice(s.indexOf('V7.2.10 高手 AI Phase 1'),s.indexOf('function tacticalWithWeights'));for(const x of['setInterval(','setTimeout(','requestAnimationFrame(','new Worker(','SharedWorker(','navigator.gpu','addEventListener('])A(!p.includes(x),x);return'isolated'});
+console.log(JSON.stringify({pass,fail}));if(fail)process.exit(1);

@@ -1,0 +1,10 @@
+{
+  "version": "V7.2.3 HandOverflow",
+  "rootCause": "UI horizontal overflow accessibility, not Core hand truncation",
+  "tests": {
+    "v7.2.3_hand_overflow_ui_regression.js": "PASS",
+    "v7.2.2_movement_direction_regression.js": "PASS",
+    "v7.2_movement_resolver_regression.js": "PASS",
+    "v7.2_map_phase2_hotfix_regression.js": "PASS"
+  }
+}

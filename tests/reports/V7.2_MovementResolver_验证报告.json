@@ -1,0 +1,63 @@
+{
+  "engine": "0.5.2-map-phase2-hotfix",
+  "suite": "V7.2 MovementResolver unified movement regression",
+  "passed": 6,
+  "total": 6,
+  "ok": true,
+  "results": [
+    {
+      "name": "统一路径执行：cost=2 边不能用1点移动力穿越",
+      "ok": true,
+      "detail": {
+        "edge": "H3->G4",
+        "cost": 2
+      }
+    },
+    {
+      "name": "自动接近按移动力预算选路，而不是按step次数",
+      "ok": true,
+      "detail": {
+        "from": "H3",
+        "to": "F2",
+        "target": "A4",
+        "budget1Moved": false,
+        "budget2Spent": 2
+      }
+    },
+    {
+      "name": "自动后退同样受 edge cost 预算约束",
+      "ok": true,
+      "detail": {
+        "from": "B4",
+        "to": "B2",
+        "threat": "A4"
+      }
+    },
+    {
+      "name": "Occupancy 为通用地图规则：额外实体可阻止进入",
+      "ok": true,
+      "detail": {
+        "blockedCell": "F3",
+        "entity": "crate"
+      }
+    },
+    {
+      "name": "强制位移走统一Resolver，但不把困难地形cost当作击退距离",
+      "ok": true,
+      "detail": {
+        "edge": "H3->G4",
+        "steps": 1,
+        "terrainCost": 2
+      }
+    },
+    {
+      "name": "战术步方向分支也遵守移动力预算",
+      "ok": true,
+      "detail": {
+        "edge": "H3->G4",
+        "rejected": true,
+        "error": "移动力不足：需要2，当前1"
+      }
+    }
+  ]
+}

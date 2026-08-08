@@ -1,0 +1,65 @@
+{
+  "release": "V7.2 Map Phase 2 Golden Master candidate",
+  "engine": "0.5.1-map-phase2",
+  "currentProductionCore": {
+    "passed": 3,
+    "total": 3,
+    "results": [
+      {
+        "command": "node v7.2_map_phase2_regression.js",
+        "ok": true,
+        "stdout": "{\n  \"engine\": \"0.5.1-map-phase2\",\n  \"passed\": 5,\n  \"total\": 5,\n  \"failed\": [],\n  \"results\": [\n    {\n      \"name\": \"MapState v2/坐标索引/邻接完整\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"资源/补给目标进入MapState\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"战术步合法路径完全由Map查询结果驱动\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"主动移动产生领域事件并同步occupant\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"地图查询为副本，外部修改不能污染Core\",\n      \"ok\": true\n    }\n  ]\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": "node v7.2_map_fayoum_regression.js",
+        "ok": true,
+        "stdout": "{\n  \"engine\": \"0.5.1-map-phase2\",\n  \"passed\": 5,\n  \"total\": 5,\n  \"failed\": [],\n  \"results\": [\n    {\n      \"name\": \"版本与MapState公开查询\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"太阳算式建立3张牌顶PendingChoice\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"牌顶顺序可自定义提交且事务关闭\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"对手Observation不能读取私有牌序\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"MOVE产生距离领域事件\",\n      \"ok\": true\n    }\n  ]\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": "node v7.2_map_phase2_public_api_fuzz.js",
+        "ok": true,
+        "stdout": "{\n  \"engine\": \"0.5.1-map-phase2\",\n  \"games\": 30,\n  \"commands\": 4278,\n  \"failures\": [],\n  \"ok\": true\n}\n",
+        "stderr": ""
+      }
+    ]
+  },
+  "v7_1_3GoldenMasterFrozenBaseline": {
+    "passed": 5,
+    "total": 5,
+    "results": [
+      {
+        "command": "node v7.1.3_response_window_multihit_regression.js",
+        "ok": true,
+        "stdout": "{\n  \"version\": \"7.1.3-response-window-stability\",\n  \"passed\": 10,\n  \"total\": 10,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"name\": \"第1-4击逐击开放响应窗口，前3击放弃响应可续追\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"RESPONSE_WINDOW\",\n        \"step\": 4,\n        \"responseCount\": 4,\n        \"chainResolved\": 3\n      }\n    },\n    {\n      \"name\": \"第2击普通挣脱不会留下挂起响应\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"PRE_ATTACK\",\n        \"qi\": 3,\n        \"expansionCount\": 1\n      }\n    },\n    {\n      \"name\": \"第3击普通挣脱不会留下挂起响应\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"PRE_ATTACK\",\n        \"qi\": 3,\n        \"expansionCount\": 1\n      }\n    },\n    {\n      \"name\": \"第4击普通挣脱不会留下挂起响应\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"PRE_ATTACK\",\n        \"qi\": 3,\n        \"expansionCount\": 1\n      }\n    },\n    {\n      \"name\": \"第2击反击不会留下挂起响应\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"PRE_ATTACK\",\n        \"initiative\": 0,\n        \"chainResolved\": 1\n      }\n    },\n    {\n      \"name\": \"第3击反击不会留下挂起响应\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"PRE_ATTACK\",\n        \"initiative\": 0,\n        \"chainResolved\": 2\n      }\n    },\n    {\n      \"name\": \"第4击反击不会留下挂起响应\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"PRE_ATTACK\",\n        \"initiative\": 0,\n        \"chainResolved\": 3\n      }\n    },\n    {\n      \"name\": \"第2击放弃响应后继续正确结算\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"CHASE_WINDOW\",\n        \"chain\": 2,\n        \"lastStep\": 2\n      }\n    },\n    {\n      \"name\": \"第3击放弃响应后继续正确结算\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"CHASE_WINDOW\",\n        \"chain\": 3,\n        \"lastStep\": 3\n      }\n    },\n    {\n      \"name\": \"第4击放弃响应后继续正确结算\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"CHASE_WINDOW\",\n        \"chain\": 4,\n        \"lastStep\": 4\n      }\n    }\n  ]\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": "node v7.1.1_engine_core_phase4_regression.js",
+        "ok": true,
+        "stdout": "{\n  \"passed\": 5,\n  \"total\": 5,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"name\": \"生产 API 封口\",\n      \"ok\": true,\n      \"detail\": {\n        \"facade\": [\n          \"version\",\n          \"gameplayVersion\",\n          \"createGame\",\n          \"replay\",\n          \"createAI\",\n          \"catalog\"\n        ],\n        \"coreOwnKeys\": []\n      }\n    },\n    {\n      \"name\": \"Observation 隐藏信息隔离\",\n      \"ok\": true,\n      \"detail\": {\n        \"aHand\": 5,\n        \"bHand\": 5\n      }\n    },\n    {\n      \"name\": \"dispatch 事件 delta + sequence\",\n      \"ok\": true,\n      \"detail\": {\n        \"first\": {\n          \"from\": 1,\n          \"to\": 3\n        },\n        \"second\": {\n          \"from\": 4,\n          \"to\": 4\n        }\n      }\n    },\n    {\n      \"name\": \"Replay digest 确定性\",\n      \"ok\": true,\n      \"detail\": {\n        \"commands\": 50,\n        \"digest\": \"e42284df\"\n      }\n    },\n    {\n      \"name\": \"forbidden mirror 语义扫描契约\",\n      \"ok\": true,\n      \"detail\": {\n        \"movedThisExpansion\": 0,\n        \"healedThisExpansion\": 0,\n        \"damageTakenThisExpansion\": 0,\n        \"selfDamageThisExpansion\": 0,\n        \"cardsPlayedThisExpansion\": 0,\n        \"attacksThisExpansion\": 0,\n        \"expansionAttackCards\": 0\n      }\n    }\n  ]\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": "node v7.1.2_response_snapshot_regression.js",
+        "ok": true,
+        "stdout": "{\"ok\":true,\"cloneSessionRecovered\":true,\"legalCount\":11}\n",
+        "stderr": ""
+      },
+      {
+        "command": "node v7.1_combat_regression.js engine.v714.core.debug.bundle.js",
+        "ok": true,
+        "stdout": "{\n  \"version\": \"7.1.1-combat-hotfix-candidate\",\n  \"passed\": 7,\n  \"total\": 7,\n  \"failed\": [],\n  \"results\": [\n    {\n      \"name\": \"V7.1 version\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"nine role profiles\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"structured role conditions\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"skills and ultimates tagged\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"combo solver route\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"solver no hidden mutation\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"all hero AI resolves\",\n      \"ok\": true\n    }\n  ]\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": "node v6.6_signature_playability.js ./engine.v714.core.debug.bundle.js",
+        "ok": true,
+        "stdout": "{\n  \"passed\": true,\n  \"checks\": [\n    {\n      \"name\": \"洛基：击退追步接一二连打并返能\",\n      \"ok\": true,\n      \"detail\": {\n        \"chain\": 2,\n        \"energy\": 4,\n        \"startE\": 5\n      }\n    },\n    {\n      \"name\": \"赤羽：击退后猎场追袭自动桥接\",\n      \"ok\": true,\n      \"detail\": {\n        \"chain\": 2,\n        \"distance\": 1\n      }\n    },\n    {\n      \"name\": \"拉封：反击生成荣耀回刺与夺权\",\n      \"ok\": true,\n      \"detail\": {\n        \"riposte\": true,\n        \"seizeFollow\": true,\n        \"phase\": \"CHASE_WINDOW\"\n      }\n    },\n    {\n      \"name\": \"囚徒：剧痛咆哮限次、痛觉兴奋与处刑终结\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"PRE_ATTACK\",\n        \"painExcited\": true\n      }\n    },\n    {\n      \"name\": \"白夜：未攻击不长羽，攻击后成长可达\",\n      \"ok\": true,\n      \"detail\": {\n        \"feathers\": 2\n      }\n    },\n    {\n      \"name\": \"岚羽：飞行三击终结与高枝俯冲第3击加成\",\n      \"ok\": true,\n      \"detail\": {\n        \"diveDamage\": 5,\n        \"phase\": \"PRE_ATTACK\"\n      }\n    },\n    {\n      \"name\": \"游影：可选择不游步，也可选择游步；游墙消耗战术步\",\n      \"ok\": true,\n      \"detail\": {\n        \"wander\": 0,\n        \"tacticalUsed\": true\n      }\n    },\n    {\n      \"name\": \"玄医：治疗后回春追针可跨1格接续\",\n      \"ok\": true,\n      \"detail\": {\n        \"chain\": 2,\n        \"distance\": 1\n      }\n    },\n    {\n      \"name\": \"法尤姆：远程命线接3格追咒并消耗命线\",\n      \"ok\": true,\n      \"detail\": {\n        \"chain\": 2\n      }\n    }\n  ]\n}\n",
+        "stderr": ""
+      }
+    ]
+  },
+  "note": "V7.1.3 tests execute preserved Golden Master bundles. V7.2 production is covered via public GameEngine API regression/fuzz. Fayoum top-3 scry is an approved V7.2 bugfix, so the old broken behavior is not part of equivalence."
+}

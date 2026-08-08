@@ -1,0 +1,95 @@
+{
+  "delivery": "V7.1.1 Engine Core Phase 4 — Deterministic Core Closure",
+  "engineCoreVersion": "0.4.0-phase4",
+  "gameplayVersion": "7.1.1-combat-hotfix-candidate",
+  "architecture_stage": "CLOSED",
+  "production_boundary": {
+    "global_V6_exposed": false,
+    "production_facade": [
+      "version",
+      "gameplayVersion",
+      "createGame",
+      "replay",
+      "createAI",
+      "catalog"
+    ],
+    "core_mutable_state_exposed_as_property": false,
+    "debug_internal_export_separate_build": true,
+    "production_html_uses_debug_build": false
+  },
+  "observation_boundary": {
+    "opponent_hand_identity_redacted": true,
+    "deck_order_redacted_for_both_sides": true,
+    "rng_and_id_counters_redacted": true,
+    "private_pending_choice_side_scoped": true
+  },
+  "events": {
+    "dispatch_returns_command_delta_only": true,
+    "stable_event_sequence": true,
+    "event_id_retained": true,
+    "full_expansion_ledger_remains_internal": true
+  },
+  "forbidden_mirror_validation": {
+    "method": "runtime invariant + semantic static scan",
+    "bad_business_context_occurrences": {
+      "movedThisExpansion": 0,
+      "healedThisExpansion": 0,
+      "damageTakenThisExpansion": 0,
+      "selfDamageThisExpansion": 0,
+      "cardsPlayedThisExpansion": 0,
+      "attacksThisExpansion": 0,
+      "expansionAttackCards": 0
+    },
+    "forbidden_names_intentionally_remain_in_invariant_list": true,
+    "passed": true
+  },
+  "phase4_regression": "5/5 PASS",
+  "fuzz_replay_closure": {
+    "last_completed_run": "30 games x max 120 legal commands",
+    "commands_executed": 3437,
+    "completed_games_with_winner_or_draw_within_cap": 6,
+    "failures": 0,
+    "note": "Harness saves a failing replay fixture on first failure. An earlier run discovered the lance_charge CHASE_WINDOW-without-expansion invariant bug; Phase 4 fixes it."
+  },
+  "compatibility_regressions_on_v714_debug": {
+    "v6.6_signature_playability": "9/9 PASS",
+    "v7.1_combat_regression": "7/7 PASS",
+    "v7.0.2_hidden_information_regression": "PASS",
+    "v7.0.2_scry_transaction_regression": "PASS",
+    "v7.0_initiative_sync_regression": "PASS"
+  },
+  "fuzz_discovered_fix": {
+    "id": "lance_charge_open_chase_without_expansion",
+    "before": "lance_charge could set CHASE_WINDOW directly from PRE_ATTACK with no expansion",
+    "after": "ensureExpansion(draft, side) before CHASE_WINDOW",
+    "gameplay_numbers_changed": false,
+    "art_assets_changed": false
+  },
+  "preserved_golden_masters": {
+    "engine.v713.core.bundle.js": {
+      "sha256": "5c129d17c2aa5bbd1ecafde0ae4889d4f186de7783b444cd173270580b694acc",
+      "preserved": true
+    },
+    "engine.v712.core.bundle.js": {
+      "sha256": "618263e5949c6c56193305cb0a9484c22578b984c2a37f474dc4aad63ddbc87f",
+      "preserved": true
+    },
+    "engine.v702.core.bundle.js": {
+      "sha256": "d2fd83e606f1e03dfcfdfef010265c530ab7903983a7dcd9609c2859fb20fcc1",
+      "preserved": true
+    },
+    "engine.v66.bundle.js": {
+      "sha256": "824e27052fb16f95d71a3b3feaf98451545d6e1986fa6b4c54ef31452952bba8",
+      "preserved": true
+    },
+    "斗鸡_缩域争鸣_V7.1_Combat_九角色重做版.html": {
+      "sha256": "88ecaa8cff4430a023650aceb8bffaa8cea78a338db317a56bce72631b7e588c",
+      "preserved": true
+    },
+    "斗鸡_缩域争鸣_V7.1.1_Engine前端版_Phase3对照.html": {
+      "sha256": "c5963fe23ee23d8751c1fc7712af20a6c4e5ba3d5ebe0e29361974d66da60f83",
+      "preserved": true
+    }
+  },
+  "browser_note": "未在此执行环境中宣称完成真实浏览器视觉验收；正式 HTML/适配器已改为生产 Facade 路径，旧 Phase 3 前端保留作对照。"
+}

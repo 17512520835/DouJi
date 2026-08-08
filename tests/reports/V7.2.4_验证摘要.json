@@ -1,0 +1,23 @@
+{
+  "version": "V7.2.4",
+  "replayDiagnosis": {
+    "round": 43,
+    "section": 4,
+    "qiuHand": 14,
+    "qiuDeck": 1,
+    "suppressBreakTriggers": 27,
+    "resourceStreakMaxObserved": 7
+  },
+  "fix": {
+    "passiveDrawSoftTarget": 5,
+    "activeDrawMayOverflow": true,
+    "hardHandCap": false
+  },
+  "regression": [
+    "PassiveDraw 4/4 PASS",
+    "HandOverflow 5/5 PASS",
+    "MovementDirection 4/4 PASS",
+    "MovementResolver 6/6 PASS",
+    "Map Hotfix 10/10 PASS"
+  ]
+}

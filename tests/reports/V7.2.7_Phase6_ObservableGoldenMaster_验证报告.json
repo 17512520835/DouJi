@@ -1,0 +1,188 @@
+{
+  "version": "V7.2.7",
+  "phase": "Phase6 Observable Golden Master",
+  "baseline": {
+    "file": "engine.v714.core.bundle.js",
+    "version": "0.4.0-phase4"
+  },
+  "current": {
+    "file": "engine.v721.core.bundle.js",
+    "version": "0.5.2-map-phase2-hotfix"
+  },
+  "scope": "Randomized semantic spot-check before large section-transition responsibility differences. MapState internals are excluded.",
+  "method": "same seed + same heroes + same first player + identical semantic legal command; compare player-observable digest after every command",
+  "approvedExceptions": [
+    "V7.2.4_PASSIVE_DRAW_SOFT_TARGET",
+    "FAYOUM_SUN_FORMULA_PENDING_CHOICE"
+  ],
+  "summary": {
+    "scenarios": 16,
+    "totalCommands": 163,
+    "pass": 12,
+    "passWithApprovedExceptions": 4,
+    "unexplainedFailures": 0
+  },
+  "passed": true,
+  "scenarios": [
+    {
+      "heroA": "luoji",
+      "heroB": "qiu013",
+      "seed": 713113,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":0,\"dest\":{\"c\":2,\"r\":5},\"dir\":\"path\",\"kind\":\"tactical_step\",\"movePath\":[{\"c\":2,\"r\":5}],\"moveSpent\":1}"
+    },
+    {
+      "heroA": "luoji",
+      "heroB": "qiu013",
+      "seed": 726613,
+      "first": "A",
+      "status": "PASS_WITH_APPROVED_EXCEPTION",
+      "steps": 3,
+      "reason": "V7.2.4_PASSIVE_DRAW_SOFT_TARGET",
+      "lastAction": "{\"cost\":0,\"kind\":\"end\"}"
+    },
+    {
+      "heroA": "chiyu",
+      "heroB": "xuanyi",
+      "seed": 713113,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":2,\"kind\":\"use_skill\",\"name\":\"养生大周天\",\"skill\":{\"cost\":2,\"id\":\"great_cycle\",\"limit\":\"round\",\"name\":\"养生大周天\",\"text\":\"展开结束时：若本链至少2击，回2生命并得1气；否则只回1生命。\",\"v71Tags\":[\"heal\",\"chain_payoff\",\"qi\"]},\"skillId\":\"great_cycle\",\"tags\":[\"heal\",\"resource\"]}"
+    },
+    {
+      "heroA": "chiyu",
+      "heroB": "xuanyi",
+      "seed": 726613,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":0,\"dest\":{\"c\":3,\"r\":3},\"dir\":\"path\",\"kind\":\"tactical_step\",\"movePath\":[{\"c\":3,\"r\":3}],\"moveSpent\":1}"
+    },
+    {
+      "heroA": "lafeng",
+      "heroB": "baiye",
+      "seed": 713113,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":2,\"kind\":\"use_skill\",\"name\":\"湖上独舞\",\"skill\":{\"cost\":2,\"id\":\"lake_dance\",\"limit\":\"round\",\"name\":\"湖上独舞\",\"text\":\"本展开每次移动令下一击+1伤。\",\"v71Tags\":[\"growth\",\"chain_setup\",\"move_synergy\"]},\"skillId\":\"lake_dance\",\"tags\":[\"move_synergy\",\"attack_bonus\"]}"
+    },
+    {
+      "heroA": "lafeng",
+      "heroB": "baiye",
+      "seed": 726613,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":0,\"kind\":\"end\"}"
+    },
+    {
+      "heroA": "lanyu",
+      "heroB": "youying",
+      "seed": 713113,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":0,\"kind\":\"end\"}"
+    },
+    {
+      "heroA": "lanyu",
+      "heroB": "youying",
+      "seed": 726613,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":0,\"kind\":\"pass\"}"
+    },
+    {
+      "heroA": "fayoum",
+      "heroB": "luoji",
+      "seed": 713113,
+      "first": "A",
+      "status": "PASS_WITH_APPROVED_EXCEPTION",
+      "steps": 7,
+      "reason": "FAYOUM_SUN_FORMULA_PENDING_CHOICE",
+      "lastAction": "{\"cardName\":\"太阳算式\",\"cardType\":\"resource\",\"condition\":\"\",\"cost\":0,\"damage\":0,\"effect\":\"scry\",\"heal\":0,\"kind\":\"play_card\",\"range\":1,\"timing\":\"action\"}"
+    },
+    {
+      "heroA": "fayoum",
+      "heroB": "luoji",
+      "seed": 726613,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":0,\"kind\":\"end\"}"
+    },
+    {
+      "heroA": "qiu013",
+      "heroB": "fayoum",
+      "seed": 713113,
+      "first": "A",
+      "status": "PASS_WITH_APPROVED_EXCEPTION",
+      "steps": 3,
+      "reason": "V7.2.4_PASSIVE_DRAW_SOFT_TARGET",
+      "lastAction": "{\"cost\":0,\"kind\":\"end\"}"
+    },
+    {
+      "heroA": "qiu013",
+      "heroB": "fayoum",
+      "seed": 726613,
+      "first": "A",
+      "status": "PASS_WITH_APPROVED_EXCEPTION",
+      "steps": 2,
+      "reason": "V7.2.4_PASSIVE_DRAW_SOFT_TARGET",
+      "lastAction": "{\"cost\":0,\"kind\":\"end\"}"
+    },
+    {
+      "heroA": "baiye",
+      "heroB": "chiyu",
+      "seed": 713113,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":0,\"kind\":\"end\"}"
+    },
+    {
+      "heroA": "baiye",
+      "heroB": "chiyu",
+      "seed": 726613,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":0,\"kind\":\"end\"}"
+    },
+    {
+      "heroA": "xuanyi",
+      "heroB": "lafeng",
+      "seed": 713113,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cost\":2,\"kind\":\"use_skill\",\"name\":\"决斗宣誓\",\"skill\":{\"cost\":2,\"id\":\"duel_oath\",\"limit\":\"round\",\"name\":\"决斗宣誓\",\"text\":\"本展开若只攻击1次，该攻击+2伤。\"},\"skillId\":\"duel_oath\",\"tags\":[\"single_hit_bonus\",\"attack_bonus\"]}"
+    },
+    {
+      "heroA": "xuanyi",
+      "heroB": "lafeng",
+      "seed": 726613,
+      "first": "A",
+      "status": "PASS",
+      "steps": 12,
+      "reason": null,
+      "lastAction": "{\"cardName\":\"走经回脉\",\"cardType\":\"resource\",\"condition\":\"\",\"cost\":0,\"damage\":0,\"effect\":\"qi\",\"heal\":0,\"kind\":\"play_card\",\"range\":1,\"timing\":\"action\"}"
+    }
+  ]
+}

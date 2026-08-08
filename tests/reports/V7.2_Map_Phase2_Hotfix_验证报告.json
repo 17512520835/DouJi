@@ -1,0 +1,97 @@
+{
+  "engine": "0.5.2-map-phase2-hotfix",
+  "passed": 10,
+  "total": 10,
+  "failed": [],
+  "results": [
+    {
+      "name": "hexStep reads MapState cell without legacy exists",
+      "ok": true,
+      "detail": {
+        "from": "E1",
+        "to": "F1"
+      }
+    },
+    {
+      "name": "automatic approach moves and closes distance",
+      "ok": true,
+      "detail": {
+        "from": "C1",
+        "target": "F1",
+        "before": 3,
+        "after": 2
+      }
+    },
+    {
+      "name": "automatic retreat moves and increases distance",
+      "ok": true,
+      "detail": {
+        "from": "C1",
+        "threat": "D1",
+        "before": 1,
+        "after": 2
+      }
+    },
+    {
+      "name": "knockback / forced displacement moves defender and occupant",
+      "ok": true,
+      "detail": {
+        "attacker": "C1",
+        "defenderFrom": "D1",
+        "defenderTo": "E1"
+      }
+    },
+    {
+      "name": "CHASE_WINDOW always owns a live expansion after handoff",
+      "ok": true,
+      "detail": {
+        "phase": "CHASE_WINDOW",
+        "expansionId": "exp-2-4039274613",
+        "initiativeSide": 1
+      }
+    },
+    {
+      "name": "shrink relocation is unique and synchronized",
+      "ok": true,
+      "detail": {
+        "A": "D2",
+        "B": "D8",
+        "section": 3
+      }
+    },
+    {
+      "name": "danger-zone damage resolves at expansion end",
+      "ok": true,
+      "detail": {
+        "cell": "C1",
+        "before": 24,
+        "after": 23
+      }
+    },
+    {
+      "name": "active supply comes from MapState and rotates after choice",
+      "ok": true,
+      "detail": {
+        "before": "B5",
+        "after": "H5"
+      }
+    },
+    {
+      "name": "resource controller/streak uses MapState objective",
+      "ok": true,
+      "detail": {
+        "cell": "E5",
+        "streak": 1,
+        "controller": 0
+      }
+    },
+    {
+      "name": "browser UI objective markers are MapState-driven",
+      "ok": true,
+      "detail": {
+        "resource": "MapState",
+        "supply": "MapState.active"
+      }
+    }
+  ]
+}

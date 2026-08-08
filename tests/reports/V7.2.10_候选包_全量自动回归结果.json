@@ -1,0 +1,153 @@
+{
+  "stage": "V7.2.10 candidate full automatic regression",
+  "passed": true,
+  "passedCount": 18,
+  "total": 18,
+  "failed": [],
+  "results": [
+    {
+      "file": "v7.2.10_combat_feedback_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"stage\": \"V7.2.10 combat feedback + qiu heal1\",\n  \"passed\": true,\n  \"total\": 3,\n  \"results\": [\n    {\n      \"name\": \"抑制崩坏：主动空收势仅恢复1生命\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"本地战斗界面包含非阻塞战斗通报与打击反馈\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"Online界面包含双方技能/绝技/连击通报与打击反馈\",\n      \"ok\": true\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.10_high_ai_phase1_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "PASS choose is read-only and legal end\nPASS 20 decisions are dispatchable and bounded 303.4ms\nPASS no background/GPU/global-hook API isolated\n{\"pass\":3,\"fail\":0}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.10_high_ai_hidden_information_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"stage\": \"V7.2.10 High AI Hidden Information Boundary\",\n  \"passed\": true,\n  \"structural\": [\n    {\n      \"file\": \"engine.v721.core.bundle.js\",\n      \"ok\": true\n    },\n    {\n      \"file\": \"engine.v721.core.debug.bundle.js\",\n      \"ok\": true\n    }\n  ],\n  \"behavioral\": {\n    \"decisions\": 240,\n    \"rejected\": 0\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.10_high_ai_long_smoke.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"ok\": true,\n  \"results\": [\n    {\n      \"seed\": 721000,\n      \"a\": \"luoji\",\n      \"b\": \"lafeng\",\n      \"actions\": 108,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 721977,\n      \"a\": \"chiyu\",\n      \"b\": \"lanyu\",\n      \"actions\": 45,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 722954,\n      \"a\": \"lafeng\",\n      \"b\": \"fayoum\",\n      \"actions\": 62,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 723931,\n      \"a\": \"qiu013\",\n      \"b\": \"lafeng\",\n      \"actions\": 82,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 724908,\n      \"a\": \"baiye\",\n      \"b\": \"lanyu\",\n      \"actions\": 165,\n      \"winner\": 0,\n      \"rejected\": 0,\n      \"completed\": true\n    },\n    {\n      \"seed\": 725885,\n      \"a\": \"lanyu\",\n      \"b\": \"fayoum\",\n      \"actions\": 60,\n      \"winner\": 1,\n      \"rejected\": 0,\n      \"completed\": true\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.9_dead_hand_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"suite\": \"V7.2.9 dead-hand anti-brick regression\",\n  \"passed\": 2,\n  \"total\": 2,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"name\": \"白夜：追击+反击死手会触发整备换手\",\n      \"ok\": true,\n      \"detail\": {\n        \"before\": [\n          \"终成白夜\",\n          \"缩颈防身\",\n          \"幼生惊逃\",\n          \"破壳跃升\",\n          \"湖畔追啄\"\n        ],\n        \"after\": [\n          \"水面借力\",\n          \"湖畔追啄\",\n          \"稚羽上挑\",\n          \"斜翼掠水\",\n          \"翻羽落地\"\n        ],\n        \"redrawCount\": 5\n      }\n    },\n    {\n      \"name\": \"有移动/增益等主动牌时不会被误判为死手\",\n      \"ok\": true,\n      \"detail\": {\n        \"hand\": [\n          \"笨拙扑腾\",\n          \"缩颈防身\",\n          \"幼生惊逃\",\n          \"破壳跃升\",\n          \"湖畔追啄\"\n        ]\n      }\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2_map_phase2_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"engine\": \"0.5.2-map-phase2-hotfix\",\n  \"passed\": 5,\n  \"total\": 5,\n  \"failed\": [],\n  \"results\": [\n    {\n      \"name\": \"MapState v2/坐标索引/邻接完整\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"资源/补给目标进入MapState\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"战术步合法路径完全由Map查询结果驱动\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"主动移动产生领域事件并同步occupant\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"地图查询为副本，外部修改不能污染Core\",\n      \"ok\": true\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2_map_phase2_public_api_fuzz.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"engine\": \"0.5.2-map-phase2-hotfix\",\n  \"games\": 8,\n  \"commands\": 640,\n  \"failures\": [],\n  \"ok\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2_map_phase2_hotfix_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"engine\": \"0.5.2-map-phase2-hotfix\",\n  \"passed\": 10,\n  \"total\": 10,\n  \"failed\": [],\n  \"results\": [\n    {\n      \"name\": \"hexStep reads MapState cell without legacy exists\",\n      \"ok\": true,\n      \"detail\": {\n        \"from\": \"E1\",\n        \"to\": \"F1\"\n      }\n    },\n    {\n      \"name\": \"automatic approach moves and closes distance\",\n      \"ok\": true,\n      \"detail\": {\n        \"from\": \"C1\",\n        \"target\": \"F1\",\n        \"before\": 3,\n        \"after\": 2\n      }\n    },\n    {\n      \"name\": \"automatic retreat moves and increases distance\",\n      \"ok\": true,\n      \"detail\": {\n        \"from\": \"C1\",\n        \"threat\": \"D1\",\n        \"before\": 1,\n        \"after\": 2\n      }\n    },\n    {\n      \"name\": \"knockback / forced displacement moves defender and occupant\",\n      \"ok\": true,\n      \"detail\": {\n        \"attacker\": \"C1\",\n        \"defenderFrom\": \"D1\",\n        \"defenderTo\": \"E1\"\n      }\n    },\n    {\n      \"name\": \"CHASE_WINDOW always owns a live expansion after handoff\",\n      \"ok\": true,\n      \"detail\": {\n        \"phase\": \"CHASE_WINDOW\",\n        \"expansionId\": \"exp-2-4039274613\",\n        \"initiativeSide\": 1\n      }\n    },\n    {\n      \"name\": \"shrink relocation is unique and synchronized\",\n      \"ok\": true,\n      \"detail\": {\n        \"A\": \"D2\",\n        \"B\": \"D8\",\n        \"section\": 3\n      }\n    },\n    {\n      \"name\": \"danger-zone damage resolves at expansion end\",\n      \"ok\": true,\n      \"detail\": {\n        \"cell\": \"C1\",\n        \"before\": 24,\n        \"after\": 23\n      }\n    },\n    {\n      \"name\": \"active supply comes from MapState and rotates after choice\",\n      \"ok\": true,\n      \"detail\": {\n        \"before\": \"B5\",\n        \"after\": \"H5\"\n      }\n    },\n    {\n      \"name\": \"resource controller/streak uses MapState objective\",\n      \"ok\": true,\n      \"detail\": {\n        \"cell\": \"E5\",\n        \"streak\": 1,\n        \"controller\": 0\n      }\n    },\n    {\n      \"name\": \"browser UI objective markers are MapState-driven\",\n      \"ok\": true,\n      \"detail\": {\n        \"resource\": \"MapState\",\n        \"supply\": \"MapState.active\"\n      }\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2_movement_resolver_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"engine\": \"0.5.2-map-phase2-hotfix\",\n  \"suite\": \"V7.2 MovementResolver unified movement regression\",\n  \"passed\": 6,\n  \"total\": 6,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"name\": \"统一路径执行：cost=2 边不能用1点移动力穿越\",\n      \"ok\": true,\n      \"detail\": {\n        \"edge\": \"H3->G4\",\n        \"cost\": 2\n      }\n    },\n    {\n      \"name\": \"自动接近按移动力预算选路，而不是按step次数\",\n      \"ok\": true,\n      \"detail\": {\n        \"from\": \"H3\",\n        \"to\": \"F2\",\n        \"target\": \"A4\",\n        \"budget1Moved\": false,\n        \"budget2Spent\": 2\n      }\n    },\n    {\n      \"name\": \"自动后退同样受 edge cost 预算约束\",\n      \"ok\": true,\n      \"detail\": {\n        \"from\": \"B4\",\n        \"to\": \"B2\",\n        \"threat\": \"A4\"\n      }\n    },\n    {\n      \"name\": \"Occupancy 为通用地图规则：额外实体可阻止进入\",\n      \"ok\": true,\n      \"detail\": {\n        \"blockedCell\": \"F3\",\n        \"entity\": \"crate\"\n      }\n    },\n    {\n      \"name\": \"强制位移走统一Resolver，但不把困难地形cost当作击退距离\",\n      \"ok\": true,\n      \"detail\": {\n        \"edge\": \"H3->G4\",\n        \"steps\": 1,\n        \"terrainCost\": 2\n      }\n    },\n    {\n      \"name\": \"战术步方向分支也遵守移动力预算\",\n      \"ok\": true,\n      \"detail\": {\n        \"edge\": \"H3->G4\",\n        \"rejected\": true,\n        \"error\": \"移动力不足：需要2，当前1\"\n      }\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.2_movement_direction_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"engine\": \"0.5.2-map-phase2-hotfix\",\n  \"suite\": \"V7.2.2 movement direction / selection fidelity\",\n  \"passed\": 4,\n  \"total\": 4,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"name\": \"自由移动：每个返回落点的所选路径都精确落到该落点\",\n      \"ok\": true,\n      \"detail\": {\n        \"targets\": 10,\n        \"relations\": [\n          \"前进\",\n          \"侧移\",\n          \"后退\"\n        ]\n      }\n    },\n    {\n      \"name\": \"闪避方向：只返回真正远离对手的合法落点\",\n      \"ok\": true,\n      \"detail\": {\n        \"before\": 1,\n        \"targets\": [\n          \"D4\",\n          \"D6\"\n        ]\n      }\n    },\n    {\n      \"name\": \"闪避方向：选择哪个后退格就落到哪个后退格\",\n      \"ok\": true,\n      \"detail\": [\n        \"D4\",\n        \"D6\"\n      ]\n    },\n    {\n      \"name\": \"闪避方向：前进/纯侧移路径会被核心拒绝\",\n      \"ok\": true,\n      \"detail\": {\n        \"rejected\": true,\n        \"target\": \"E4\"\n      }\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2_stage3_core_mechanics_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "       \"skill\": \"full_overload\",\n          \"energyBefore\": 9,\n          \"energyAfter\": 7\n        },\n        {\n          \"hero\": \"baiye\",\n          \"skill\": \"chick_guard\",\n          \"energyBefore\": 9,\n          \"energyAfter\": 8\n        },\n        {\n          \"hero\": \"lanyu\",\n          \"skill\": \"sky_hunt\",\n          \"energyBefore\": 9,\n          \"energyAfter\": 9\n        },\n        {\n          \"hero\": \"youying\",\n          \"skill\": \"flow_break\",\n          \"energyBefore\": 9,\n          \"energyAfter\": 7\n        },\n        {\n          \"hero\": \"xuanyi\",\n          \"skill\": \"herb_revive\",\n          \"energyBefore\": 9,\n          \"energyAfter\": 7\n        },\n        {\n          \"hero\": \"fayoum\",\n          \"skill\": \"fate_leap\",\n          \"energyBefore\": 9,\n          \"energyAfter\": 7\n        }\n      ]\n    },\n    {\n      \"name\": \"九角色 Ultimate 实际结算\",\n      \"category\": \"Ultimate\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": [\n        {\n          \"hero\": \"luoji\",\n          \"ultimate\": \"ten_sec_kill\",\n          \"damage\": 6,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"chiyu\",\n          \"ultimate\": \"crown_skysurge\",\n          \"damage\": 5,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"lafeng\",\n          \"ultimate\": \"lance_charge\",\n          \"damage\": 5,\n          \"phase\": \"CHASE_WINDOW\"\n        },\n        {\n          \"hero\": \"qiu013\",\n          \"ultimate\": \"frenzy_execute\",\n          \"damage\": 7,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"baiye\",\n          \"ultimate\": \"ice_finale\",\n          \"damage\": 6,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"lanyu\",\n          \"ultimate\": \"phoenix_shadow\",\n          \"damage\": 8,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"youying\",\n          \"ultimate\": \"chaos_throat\",\n          \"damage\": 7,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"xuanyi\",\n          \"ultimate\": \"life_needle\",\n          \"damage\": 6,\n          \"phase\": \"PRE_ATTACK\"\n        },\n        {\n          \"hero\": \"fayoum\",\n          \"ultimate\": \"endgame\",\n          \"damage\": 5,\n          \"phase\": \"PRE_ATTACK\"\n        }\n      ]\n    },\n    {\n      \"name\": \"Buff：冠军怒吼实际生效\",\n      \"category\": \"Buff\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": {\n        \"luojiRoarBuff\": 1\n      }\n    },\n    {\n      \"name\": \"Debuff：尾羽震喝实际施加封技\",\n      \"category\": \"Debuff\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": {\n        \"control\": [\n          \"sealed\"\n        ]\n      }\n    },\n    {\n      \"name\": \"ResponseWindow / 多段追击 / 第2-4击反击\",\n      \"category\": \"ResponseWindow\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": {\n        \"passed\": 10,\n        \"total\": 10\n      }\n    },\n    {\n      \"name\": \"PendingChoice：创建 / 提交 / 私有信息\",\n      \"category\": \"PendingChoice\",\n      \"status\": \"PASS\",\n      \"ok\": true,\n      \"detail\": {\n        \"exitCode\": 0,\n        \"failed\": []\n      }\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v6.6_signature_playability.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"stage\": \"V6.6 signature playability compatibility (migrated to current public Core)\",\n  \"passed\": true,\n  \"checks\": [\n    {\n      \"name\": \"luoji：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"baiye\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"chiyu：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"lanyu\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"lafeng：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"youying\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"qiu013：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"xuanyi\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"baiye：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"fayoum\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"lanyu：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"luoji\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"youying：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"chiyu\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"xuanyi：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"lafeng\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    },\n    {\n      \"name\": \"fayoum：当前公共Core可玩性/AI合法性\",\n      \"ok\": true,\n      \"detail\": {\n        \"opponent\": \"qiu013\",\n        \"actions\": 30,\n        \"winner\": null\n      }\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.4_passive_draw_softcap_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"stage\": \"V7.2.4 PassiveDraw soft hand target\",\n  \"passed\": true,\n  \"total\": 4,\n  \"results\": [\n    {\n      \"name\": \"抑制崩坏：5张及以上不再被动超量摸牌\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"抑制崩坏：少于5张仍可正常摸1\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"资源点3+连占：5张以上不再继续被动摸牌\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"主动摸牌仍允许超过5张（软目标不是硬上限）\",\n      \"ok\": true\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.5_phase4_shrink_special_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "PASS normal shrink relocates illegal actor exactly once\nPASS multiple illegal actors relocate to unique legal cells\nPASS resource point can be in danger without objective corruption\nPASS defeated actor is not relocated by shrink\nPASS shrink relocation uses single forced-migration path\nPASS danger damage can kill during shrink lifecycle without relocation loop\nPASS knockback after shrink relocation does not cause second shrink migration\nPASS post-shrink movement does not retrigger relocation\nPASS AI actor is legal after shrink relocation\nPASS 50 repeated shrink applications are idempotent and bounded\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.1.1_engine_core_phase4_regression.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"passed\": 5,\n  \"total\": 5,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"name\": \"生产 API 封口\",\n      \"ok\": true,\n      \"detail\": {\n        \"facade\": [\n          \"version\",\n          \"gameplayVersion\",\n          \"createGame\",\n          \"replay\",\n          \"createAI\",\n          \"catalog\"\n        ],\n        \"coreOwnKeys\": []\n      }\n    },\n    {\n      \"name\": \"Observation 隐藏信息隔离\",\n      \"ok\": true,\n      \"detail\": {\n        \"aHand\": 5,\n        \"bHand\": 5\n      }\n    },\n    {\n      \"name\": \"dispatch 事件 delta + sequence\",\n      \"ok\": true,\n      \"detail\": {\n        \"first\": {\n          \"from\": 1,\n          \"to\": 3\n        },\n        \"second\": {\n          \"from\": 4,\n          \"to\": 4\n        }\n      }\n    },\n    {\n      \"name\": \"Replay digest 确定性\",\n      \"ok\": true,\n      \"detail\": {\n        \"commands\": 50,\n        \"digest\": \"e42284df\"\n      }\n    },\n    {\n      \"name\": \"forbidden mirror 语义扫描契约\",\n      \"ok\": true,\n      \"detail\": {\n        \"movedThisExpansion\": 0,\n        \"healedThisExpansion\": 0,\n        \"damageTakenThisExpansion\": 0,\n        \"selfDamageThisExpansion\": 0,\n        \"cardsPlayedThisExpansion\": 0,\n        \"attacksThisExpansion\": 0,\n        \"expansionAttackCards\": 0\n      }\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.7_phase6_observable_golden_master.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "{\n  \"scenarios\": 16,\n  \"totalCommands\": 163,\n  \"pass\": 12,\n  \"passWithApprovedExceptions\": 4,\n  \"unexplainedFailures\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.6_browser_entry_static_smoke.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "PASS official entry exists 斗鸡_缩域争鸣_V7.2_Map_Phase2_Hotfix候选.html\nPASS entry loads V7.2.1 core ./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js\nPASS entry loads V7.2.1 frontend adapter ./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js\nPASS dependency exists: ./engine.v721.core.bundle.js ./engine.v721.core.bundle.js\nPASS dependency exists: ./frontend.engine-adapter.v721.js ./frontend.engine-adapter.v721.js\nPASS entry has browser boot watchdog v651-boot-watch\nPASS entry has no debug core script reference ./engine.v721.core.bundle.js, ./frontend.engine-adapter.v721.js\n",
+      "stderr": ""
+    },
+    {
+      "file": "v7.2.6_phase5_long_ai_stability.js",
+      "ok": true,
+      "status": 0,
+      "signal": null,
+      "stdout": "1/4 \u001b[33m726500\u001b[39m luoji vs qiu013 \u001b[33m478\u001b[39m draw\n2/4 \u001b[33m734419\u001b[39m chiyu vs xuanyi \u001b[33m52\u001b[39m \u001b[33m0\u001b[39m\n3/4 \u001b[33m742338\u001b[39m lafeng vs lafeng \u001b[33m83\u001b[39m \u001b[33m1\u001b[39m\n4/4 \u001b[33m750257\u001b[39m qiu013 vs youying \u001b[33m75\u001b[39m \u001b[33m1\u001b[39m\n{\n  \"completed\": 4,\n  \"unfinished\": 0,\n  \"commandRejected\": 0,\n  \"eventDuplicates\": 0,\n  \"snapshotPollution\": 0,\n  \"replayDigestMismatch\": 0,\n  \"heapSamples\": 16,\n  \"heapMinBytes\": 8192792,\n  \"heapMaxBytes\": 26313600,\n  \"heapGrowthBytes\": 18120808,\n  \"postGcHeapBytes\": [],\n  \"postGcGrowthBytes\": 0,\n  \"postGcGrowthRatio\": null,\n  \"peakExpansionLedgerEvents\": 36,\n  \"peakLegalActionSet\": 19,\n  \"peakResponseTransactionDepth\": 0,\n  \"actionQueueModel\": \"synchronous dispatch; no persistent Action Queue object in Core\",\n  \"responseQueueModel\": \"ResponseWindow/PendingChoice are single active transactions; no persistent Response Queue object in Core\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

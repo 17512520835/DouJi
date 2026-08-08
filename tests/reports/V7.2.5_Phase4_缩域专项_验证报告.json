@@ -1,0 +1,90 @@
+{
+  "version": "V7.2.5",
+  "phase": "Phase4 Shrink Special",
+  "passed": true,
+  "total": 10,
+  "failed": 0,
+  "results": [
+    {
+      "name": "normal shrink relocates illegal actor exactly once",
+      "ok": true,
+      "detail": {
+        "to": "D2"
+      }
+    },
+    {
+      "name": "multiple illegal actors relocate to unique legal cells",
+      "ok": true,
+      "detail": {
+        "A": "D2",
+        "B": "D8"
+      }
+    },
+    {
+      "name": "resource point can be in danger without objective corruption",
+      "ok": true,
+      "detail": {
+        "resource": "E5",
+        "danger": true,
+        "zone": true
+      }
+    },
+    {
+      "name": "defeated actor is not relocated by shrink",
+      "ok": true,
+      "detail": {
+        "cell": "E1"
+      }
+    },
+    {
+      "name": "shrink relocation uses single forced-migration path",
+      "ok": true,
+      "detail": {
+        "relocations": 1,
+        "to": "D2"
+      }
+    },
+    {
+      "name": "danger damage can kill during shrink lifecycle without relocation loop",
+      "ok": true,
+      "detail": {
+        "cell": "C1",
+        "hp": 0,
+        "relocations": 0
+      }
+    },
+    {
+      "name": "knockback after shrink relocation does not cause second shrink migration",
+      "ok": true,
+      "detail": {
+        "relocations": 1,
+        "cell": "E2"
+      }
+    },
+    {
+      "name": "post-shrink movement does not retrigger relocation",
+      "ok": true,
+      "detail": {
+        "from": "D2",
+        "to": "C2",
+        "relocations": 1
+      }
+    },
+    {
+      "name": "AI actor is legal after shrink relocation",
+      "ok": true,
+      "detail": {
+        "aiCell": "D8"
+      }
+    },
+    {
+      "name": "50 repeated shrink applications are idempotent and bounded",
+      "ok": true,
+      "detail": {
+        "calls": 50,
+        "A": 1,
+        "B": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "stage": "V7.2 Phase 3 - Nine-role signature regression",
+  "engine": "0.5.2-map-phase2-hotfix",
+  "gameplay": "7.2.0-map-core-candidate",
+  "passed": true,
+  "suites": [
+    {
+      "name": "九角色签名可玩性",
+      "ok": true,
+      "exitCode": 0,
+      "note": null,
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "洛基：击退追步接一二连打并返能",
+            "ok": true,
+            "detail": {
+              "chain": 2,
+              "energy": 4,
+              "startE": 5
+            }
+          },
+          {
+            "name": "赤羽：击退后猎场追袭自动桥接",
+            "ok": true,
+            "detail": {
+              "chain": 2,
+              "distance": 1
+            }
+          },
+          {
+            "name": "拉封：反击生成荣耀回刺与夺权",
+            "ok": true,
+            "detail": {
+              "riposte": true,
+              "seizeFollow": true,
+              "phase": "CHASE_WINDOW"
+            }
+          },
+          {
+            "name": "囚徒：剧痛咆哮限次、痛觉兴奋与处刑终结",
+            "ok": true,
+            "detail": {
+              "phase": "PRE_ATTACK",
+              "painExcited": true
+            }
+          },
+          {
+            "name": "白夜：未攻击不长羽，攻击后成长可达",
+            "ok": true,
+            "detail": {
+              "feathers": 2
+            }
+          },
+          {
+            "name": "岚羽：飞行三击终结与高枝俯冲第3击加成",
+            "ok": true,
+            "detail": {
+              "diveDamage": 5,
+              "phase": "PRE_ATTACK"
+            }
+          },
+          {
+            "name": "游影：可选择不游步，也可选择游步；游墙消耗战术步",
+            "ok": true,
+            "detail": {
+              "wander": 0,
+              "tacticalUsed": true
+            }
+          },
+          {
+            "name": "玄医：治疗后回春追针可跨1格接续",
+            "ok": true,
+            "detail": {
+              "chain": 2,
+              "distance": 1
+            }
+          },
+          {
+            "name": "法尤姆：远程命线接3格追咒并消耗命线",
+            "ok": true,
+            "detail": {
+              "chain": 2
+            }
+          }
+        ]
+      },
+      "stderr": null
+    },
+    {
+      "name": "ResponseWindow / 多段追击",
+      "ok": true,
+      "exitCode": 0,
+      "note": null,
+      "report": {
+        "version": "7.1.3-response-window-stability",
+        "passed": 10,
+        "total": 10,
+        "ok": true,
+        "results": [
+          {
+            "name": "第1-4击逐击开放响应窗口，前3击放弃响应可续追",
+            "ok": true,
+            "detail": {
+              "phase": "RESPONSE_WINDOW",
+              "step": 4,
+              "responseCount": 4,
+              "chainResolved": 3
+            }
+          },
+          {
+            "name": "第2击普通挣脱不会留下挂起响应",
+            "ok": true,
+            "detail": {
+              "phase": "PRE_ATTACK",
+              "qi": 3,
+              "expansionCount": 1
+            }
+          },
+          {
+            "name": "第3击普通挣脱不会留下挂起响应",
+            "ok": true,
+            "detail": {
+              "phase": "PRE_ATTACK",
+              "qi": 3,
+              "expansionCount": 1
+            }
+          },
+          {
+            "name": "第4击普通挣脱不会留下挂起响应",
+            "ok": true,
+            "detail": {
+              "phase": "PRE_ATTACK",
+              "qi": 3,
+              "expansionCount": 1
+            }
+          },
+          {
+            "name": "第2击反击不会留下挂起响应",
+            "ok": true,
+            "detail": {
+              "phase": "PRE_ATTACK",
+              "initiative": 0,
+              "chainResolved": 1
+            }
+          },
+          {
+            "name": "第3击反击不会留下挂起响应",
+            "ok": true,
+            "detail": {
+              "phase": "PRE_ATTACK",
+              "initiative": 0,
+              "chainResolved": 2
+            }
+          },
+          {
+            "name": "第4击反击不会留下挂起响应",
+            "ok": true,
+            "detail": {
+              "phase": "PRE_ATTACK",
+              "initiative": 0,
+              "chainResolved": 3
+            }
+          },
+          {
+            "name": "第2击放弃响应后继续正确结算",
+            "ok": true,
+            "detail": {
+              "phase": "CHASE_WINDOW",
+              "chain": 2,
+              "lastStep": 2
+            }
+          },
+          {
+            "name": "第3击放弃响应后继续正确结算",
+            "ok": true,
+            "detail": {
+              "phase": "CHASE_WINDOW",
+              "chain": 3,
+              "lastStep": 3
+            }
+          },
+          {
+            "name": "第4击放弃响应后继续正确结算",
+            "ok": true,
+            "detail": {
+              "phase": "CHASE_WINDOW",
+              "chain": 4,
+              "lastStep": 4
+            }
+          }
+        ]
+      },
+      "stderr": null
+    },
+    {
+      "name": "Phase4 核心契约",
+      "ok": true,
+      "exitCode": 0,
+      "note": null,
+      "report": {
+        "passed": 5,
+        "total": 5,
+        "ok": true,
+        "results": [
+          {
+            "name": "生产 API 封口",
+            "ok": true,
+            "detail": {
+              "facade": [
+                "version",
+                "gameplayVersion",
+                "createGame",
+                "replay",
+                "createAI",
+                "catalog"
+              ],
+              "coreOwnKeys": []
+            }
+          },
+          {
+            "name": "Observation 隐藏信息隔离",
+            "ok": true,
+            "detail": {
+              "aHand": 5,
+              "bHand": 5
+            }
+          },
+          {
+            "name": "dispatch 事件 delta + sequence",
+            "ok": true,
+            "detail": {
+              "first": {
+                "from": 1,
+                "to": 3
+              },
+              "second": {
+                "from": 4,
+                "to": 4
+              }
+            }
+          },
+          {
+            "name": "Replay digest 确定性",
+            "ok": true,
+            "detail": {
+              "commands": 50,
+              "digest": "e42284df"
+            }
+          },
+          {
+            "name": "forbidden mirror 语义扫描契约",
+            "ok": true,
+            "detail": {
+              "movedThisExpansion": 0,
+              "healedThisExpansion": 0,
+              "damageTakenThisExpansion": 0,
+              "selfDamageThisExpansion": 0,
+              "cardsPlayedThisExpansion": 0,
+              "attacksThisExpansion": 0,
+              "expansionAttackCards": 0
+            }
+          }
+        ]
+      },
+      "stderr": null
+    },
+    {
+      "name": "Phase2 Hotfix 位移/追击生命周期",
+      "ok": true,
+      "exitCode": 0,
+      "note": null,
+      "report": {
+        "engine": "0.5.2-map-phase2-hotfix",
+        "passed": 10,
+        "total": 10,
+        "failed": [],
+        "results": [
+          {
+            "name": "hexStep reads MapState cell without legacy exists",
+            "ok": true,
+            "detail": {
+              "from": "E1",
+              "to": "F1"
+            }
+          },
+          {
+            "name": "automatic approach moves and closes distance",
+            "ok": true,
+            "detail": {
+              "from": "C1",
+              "target": "F1",
+              "before": 3,
+              "after": 2
+            }
+          },
+          {
+            "name": "automatic retreat moves and increases distance",
+            "ok": true,
+            "detail": {
+              "from": "C1",
+              "threat": "D1",
+              "before": 1,
+              "after": 2
+            }
+          },
+          {
+            "name": "knockback / forced displacement moves defender and occupant",
+            "ok": true,
+            "detail": {
+              "attacker": "C1",
+              "defenderFrom": "D1",
+              "defenderTo": "E1"
+            }
+          },
+          {
+            "name": "CHASE_WINDOW always owns a live expansion after handoff",
+            "ok": true,
+            "detail": {
+              "phase": "CHASE_WINDOW",
+              "expansionId": "exp-2-4039274613",
+              "initiativeSide": 1
+            }
+          },
+          {
+            "name": "shrink relocation is unique and synchronized",
+            "ok": true,
+            "detail": {
+              "A": "D2",
+              "B": "D8",
+              "section": 3
+            }
+          },
+          {
+            "name": "danger-zone damage resolves at expansion end",
+            "ok": true,
+            "detail": {
+              "cell": "C1",
+              "before": 24,
+              "after": 23
+            }
+          },
+          {
+            "name": "active supply comes from MapState and rotates after choice",
+            "ok": true,
+            "detail": {
+              "before": "B5",
+              "after": "H5"
+            }
+          },
+          {
+            "name": "resource controller/streak uses MapState objective",
+            "ok": true,
+            "detail": {
+              "cell": "E5",
+              "streak": 1,
+              "controller": 0
+            }
+          },
+          {
+            "name": "browser UI objective markers are MapState-driven",
+            "ok": true,
+            "detail": {
+              "resource": "MapState",
+              "supply": "MapState.active"
+            }
+          }
+        ]
+      },
+      "stderr": null
+    },
+    {
+      "name": "MovementResolver 统一移动/移动力/Occupancy",
+      "ok": true,
+      "exitCode": 0,
+      "note": null,
+      "report": {
+        "engine": "0.5.2-map-phase2-hotfix",
+        "suite": "V7.2 MovementResolver unified movement regression",
+        "passed": 6,
+        "total": 6,
+        "ok": true,
+        "results": [
+          {
+            "name": "统一路径执行：cost=2 边不能用1点移动力穿越",
+            "ok": true,
+            "detail": {
+              "edge": "H3->G4",
+              "cost": 2
+            }
+          },
+          {
+            "name": "自动接近按移动力预算选路，而不是按step次数",
+            "ok": true,
+            "detail": {
+              "from": "H3",
+              "to": "F2",
+              "target": "A4",
+              "budget1Moved": false,
+              "budget2Spent": 2
+            }
+          },
+          {
+            "name": "自动后退同样受 edge cost 预算约束",
+            "ok": true,
+            "detail": {
+              "from": "B4",
+              "to": "B2",
+              "threat": "A4"
+            }
+          },
+          {
+            "name": "Occupancy 为通用地图规则：额外实体可阻止进入",
+            "ok": true,
+            "detail": {
+              "blockedCell": "F3",
+              "entity": "crate"
+            }
+          },
+          {
+            "name": "强制位移走统一Resolver，但不把困难地形cost当作击退距离",
+            "ok": true,
+            "detail": {
+              "edge": "H3->G4",
+              "steps": 1,
+              "terrainCost": 2
+            }
+          },
+          {
+            "name": "战术步方向分支也遵守移动力预算",
+            "ok": true,
+            "detail": {
+              "edge": "H3->G4",
+              "rejected": true,
+              "error": "移动力不足：需要2，当前1"
+            }
+          }
+        ]
+      },
+      "stderr": null
+    },
+    {
+      "name": "V7.1 战斗兼容功能",
+      "ok": true,
+      "exitCode": 1,
+      "note": "仅旧脚本固定版本号断言不匹配；功能项全部通过",
+      "report": {
+        "version": "7.2.0-map-core-candidate",
+        "passed": 6,
+        "total": 7,
+        "failed": [
+          {
+            "name": "V7.1 version",
+            "ok": false,
+            "error": "assert"
+          }
+        ],
+        "results": [
+          {
+            "name": "V7.1 version",
+            "ok": false,
+            "error": "assert"
+          },
+          {
+            "name": "nine role profiles",
+            "ok": true
+          },
+          {
+            "name": "structured role conditions",
+            "ok": true
+          },
+          {
+            "name": "skills and ultimates tagged",
+            "ok": true
+          },
+          {
+            "name": "combo solver route",
+            "ok": true
+          },
+          {
+            "name": "solver no hidden mutation",
+            "ok": true
+          },
+          {
+            "name": "all hero AI resolves",
+            "ok": true
+          }
+        ]
+      },
+      "stderr": null
+    },
+    {
+      "name": "法尤姆 PendingChoice / 私有信息 / MOVE 事件",
+      "ok": true,
+      "exitCode": 1,
+      "note": "仅旧脚本固定版本号断言不匹配；功能项全部通过",
+      "report": {
+        "engine": "0.5.2-map-phase2-hotfix",
+        "passed": 4,
+        "total": 5,
+        "failed": [
+          {
+            "name": "版本与MapState公开查询",
+            "ok": false,
+            "error": "Error: engine version\n    at A (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_fayoum_regression.js:5:29)\n    at /mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_fayoum_regression.js:15:3\n    at T (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_fayoum_regression.js:4:32)\n    at Object.<anonymous> (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_fayoum_regression.js:14:1)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)"
+          }
+        ],
+        "results": [
+          {
+            "name": "版本与MapState公开查询",
+            "ok": false,
+            "error": "Error: engine version\n    at A (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_fayoum_regression.js:5:29)\n    at /mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_fayoum_regression.js:15:3\n    at T (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_fayoum_regression.js:4:32)\n    at Object.<anonymous> (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_fayoum_regression.js:14:1)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)"
+          },
+          {
+            "name": "太阳算式建立3张牌顶PendingChoice",
+            "ok": true
+          },
+          {
+            "name": "牌顶顺序可自定义提交且事务关闭",
+            "ok": true
+          },
+          {
+            "name": "对手Observation不能读取私有牌序",
+            "ok": true
+          },
+          {
+            "name": "MOVE产生距离领域事件",
+            "ok": true
+          }
+        ]
+      },
+      "stderr": null
+    },
+    {
+      "name": "Phase2 Map 公共功能",
+      "ok": true,
+      "exitCode": 1,
+      "note": "仅旧脚本固定版本号断言不匹配；功能项全部通过",
+      "report": {
+        "engine": "0.5.2-map-phase2-hotfix",
+        "passed": 4,
+        "total": 5,
+        "failed": [
+          {
+            "name": "MapState v2/坐标索引/邻接完整",
+            "ok": false,
+            "error": "Error: version\n    at A (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_phase2_regression.js:4:29)\n    at /mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_phase2_regression.js:6:2\n    at T (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_phase2_regression.js:3:52)\n    at Object.<anonymous> (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_phase2_regression.js:5:1)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)"
+          }
+        ],
+        "results": [
+          {
+            "name": "MapState v2/坐标索引/邻接完整",
+            "ok": false,
+            "error": "Error: version\n    at A (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_phase2_regression.js:4:29)\n    at /mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_phase2_regression.js:6:2\n    at T (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_phase2_regression.js:3:52)\n    at Object.<anonymous> (/mnt/data/v72fix/斗鸡_V7.2_Map_Phase2_Hotfix候选/v7.2_map_phase2_regression.js:5:1)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)"
+          },
+          {
+            "name": "资源/补给目标进入MapState",
+            "ok": true
+          },
+          {
+            "name": "战术步合法路径完全由Map查询结果驱动",
+            "ok": true
+          },
+          {
+            "name": "主动移动产生领域事件并同步occupant",
+            "ok": true
+          },
+          {
+            "name": "地图查询为副本，外部修改不能污染Core",
+            "ok": true
+          }
+        ]
+      },
+      "stderr": null
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "V7.2.2 MovementDirection",
+  "status": "PASS",
+  "fixes": [
+    "卡牌/技能移动选择器改为优先消费 Core 返回的真实 legal action，不再由 UI 自己猜测合法方向。",
+    "闪避类反击牌新增可选择的合法后退方向；选择的 movePath 会被 Core 原样执行。",
+    "Core 新增 retreatOnly 约束，防止闪避选择前进或纯侧移伪装成后退。",
+    "选择落点后，提交精确 legal action + movePath + dest，消除同名牌/动作折叠导致的方向串线。",
+    "选定多步路径的棋子动画改为逐格沿 path 播放，不再从起点直线穿到终点造成方向错觉。",
+    "技能移动 legal action 补齐 approachOnly 过滤，UI 与 Core 的可选方向保持一致。"
+  ],
+  "regressions": {
+    "movement_direction_prod": {
+      "passed": 4,
+      "total": 4,
+      "ok": true
+    },
+    "movement_direction_debug": {
+      "passed": 4,
+      "total": 4,
+      "ok": true
+    },
+    "movement_resolver_prod": {
+      "passed": 6,
+      "total": 6,
+      "ok": true
+    },
+    "map_phase2_hotfix": {
+      "passed": 10,
+      "total": 10
+    },
+    "phase3_nine_role_signature": {
+      "passed": true
+    }
+  },
+  "html_inline_syntax": "PASS"
+}
