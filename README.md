@@ -101,6 +101,9 @@ DouJi/
 │   ├── 05-架构契约.md           ← Phase 4 核心架构摘要
 │   ├── 06-AI辅助边界声明.md     ← 【面试必读】AI 做了什么 / 没做什么
 │   ├── 07-部署与发行.md         ← GitHub Pages / itch.io / 网盘方案
+│   ├── pmbok/                    ← PMBOK 项目管理框架（12 篇）
+│   │   ├── 00-项目管理架构概述.md
+│   │   ├── 01-项目章程.md ～ 12-经验教训总结.md
 │   └── iteration-archive/      ← 27 篇原始迭代说明 MD（PM 物证）
 │
 ├── src/
